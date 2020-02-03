@@ -17,6 +17,19 @@ body {
     color: rgba(31, 32, 65, 0.5);
 }
 
+.colors {
+    display: inline-block;
+    position: absolute;
+    width: 269.26px;
+    height: 610px;
+    left: 149.74px;
+    top: 145px;
+}
+.square {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+}
 
 .colors-name {
     font-family: Quicksand;
@@ -30,6 +43,18 @@ body {
     margin: 0;
 }
 
+.type {
+    width: 403px;
+    height: 321px;
+    position: absolute;
+    left: 846px;
+    top: 145px;
+}
+
+.type-style {
+    display: inline-block;
+}
+
 .colors-rgba {
     font-family: Quicksand;
     font-style: normal;
@@ -41,58 +66,26 @@ body {
     margin: 0;
 }
 
-.square-dark {
-    width: 70px;
-    height: 70px;
-    background: #1F2041;
-    border-radius: 6px;
+h1 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #1F2041;
 }
 
-.square-dark {
-    width: 70px;
-    height: 70px;
-    background: #1F2041;
-    border-radius: 6px;
+h2 {
+    font-size: 19px;
+    line-height: 24px;
+    color: #1F2041;
 }
 
-.square-dark {
-    width: 70px;
-    height: 70px;
-    background: #1F2041;
-    border-radius: 6px;
+.main-text {
+    font-size: 14px;
+    color: #575871;
 }
 
-.square-dark {
-    width: 70px;
-    height: 70px;
-    background: #1F2041;
-    border-radius: 6px;
+h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #1F2041;
 }
 
-.square-dark {
-    width: 70px;
-    height: 70px;
-    background: #1F2041;
-    border-radius: 6px;
-}
-
-.square-dark {
-    width: 70px;
-    height: 70px;
-    background: #1F2041;
-    border-radius: 6px;
-}
-
-.square-purple {
-    width: 70px;
-    height: 70px;
-    background: #BC9CFF;
-    border-radius: 6px;
-}
-
-.square-green {
-    width: 70px;
-    height: 70px;
-    background: #6FCF97;
-    border-radius: 6px;
-}
