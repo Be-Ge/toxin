@@ -1,4 +1,98 @@
-* {
+body {
     font-family: 'Quicksand', sans-serif;
     font-family: 'Montserrat', sans-serif; 
+}
+
+.logo {
+    margin: 30px 0 0 30px;
+}
+
+.nav {
+    display: block;
+    text-decoration: none;
+    color: #1F2041;
+}
+
+.nav:hover {
+    color: rgba(31, 32, 65, 0.5);
+}
+
+
+.colors-name {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #1F2041;
+    margin: 0;
+}
+
+.colors-rgba {
+    font-family: Quicksand;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #1F2041;
+    margin: 0;
+}
+
+.square-dark {
+    width: 70px;
+    height: 70px;
+    background: #1F2041;
+    border-radius: 6px;
+}
+
+.square-dark {
+    width: 70px;
+    height: 70px;
+    background: #1F2041;
+    border-radius: 6px;
+}
+
+.square-dark {
+    width: 70px;
+    height: 70px;
+    background: #1F2041;
+    border-radius: 6px;
+}
+
+.square-dark {
+    width: 70px;
+    height: 70px;
+    background: #1F2041;
+    border-radius: 6px;
+}
+
+.square-dark {
+    width: 70px;
+    height: 70px;
+    background: #1F2041;
+    border-radius: 6px;
+}
+
+.square-dark {
+    width: 70px;
+    height: 70px;
+    background: #1F2041;
+    border-radius: 6px;
+}
+
+.square-purple {
+    width: 70px;
+    height: 70px;
+    background: #BC9CFF;
+    border-radius: 6px;
+}
+
+.square-green {
+    width: 70px;
+    height: 70px;
+    background: #6FCF97;
+    border-radius: 6px;
 }
