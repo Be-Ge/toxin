@@ -26,8 +26,8 @@
     </header>
     <!-- End main navigation -->
     <!-- Main colors -->
-    <section class="section__style" name="colors">
-        <div class="section__colors">
+    <section class="section__style">
+        <div class="section__colors" id="colors">
             <div class="border-shade"> 
                 <div class="square background-default"></div>
                 <div class="section__colors-text">
@@ -37,40 +37,50 @@
             </div>
             <div class="border-shade"> 
                 <div class="square background-blue"></div>
-                <div>
+                <div class="section__colors-text">
                 <p class="colors-name"> Dark Shade 75%</p>
                 <p class="colors-rgba">#1F2041</p>
                 </div>
             </div>
             <div class="border-shade">
                 <div class="square background-grey"></div>
+                <div class="section__colors-text">
                 <p class="colors-name"> Dark Shade 50%</p>
                 <p class="colors-rgba">#1F2041</p>
+                </div>
             </div>
             <div class="border-shade">
                 <div class="square background-light-grey"></div>
+                <div class="section__colors-text">
                 <p class="colors-name">Dark Shade 25%</p>
-                <p class="colors-rgba">#1F2041</p>  
+                <p class="colors-rgba">#1F2041</p> 
+                </div>
             </div>
             <div class="border-shade"> 
                 <div class="square background-white"></div>
+                <div class="section__colors-text">
                 <p class="colors-name">Dark Shade 5%</p>
                 <p class="colors-rgba">#1F2041</p>
+                </div>
             </div>
             <div class="border-purple">
                 <div class="square background-purple"></div> 
+                <div class="section__colors-text">
                 <p class="colors-name">Purple</p>
                 <p class="colors-rgba">#BC9CFF</p> 
+                </div>
             </div>
             <div class="border-green"> 
                 <div class="square background-green"></div>
+                <div class="section__colors-text">
                 <p class="colors-name">Green</p>
                 <p class="colors-rgba">#6FCF97</p>
+                </div>
             </div>
         </div>
         <!-- End main colors -->
         <!-- Main title types  -->
-        <div class="type" name="type">
+        <div class="type" id="type">
             <div class="type-style">
                 <p class="title">
                     H1
@@ -110,33 +120,135 @@
         <!-- End main title styles -->
     </section>  
     <!-- Input map -->
-    <section class="input__map" name="input__map">
-    <form action="">
-        <input type="email">
-        <input type="text">
-        <inpuT:date></inpuT:date>
-        <input type="checkbox" name="" id="">
-        <input type="checkbox" name="" id="">
-        <input type="checkbox" name="" id="">
-        <input type="radio" name="" id="">
-        <input type="radio" name="" id="">
-    </form>
-    </section>
-    <!-- End input map -->
-    <section class="btn__map">
-        <div class="range-slider">
+    <section class="form" id="input__map">
+        <div class="input__map" >
+            <form action="">
+                <div>
+                    <h3>Text Field</h3>
+                    <p>Default</p>
+                    <input type="email">
+                    <label for="">Email</label>
+                </div>
+                <div>
+                    <h3>Text Field</h3>
+                    <p>Hover / Focus</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <h3>Dropdown</h3>
+                    <p>Default</p>
+                    <inpuT:date></inpuT:date>
+                </div>
+                <div>
+                    <h3>masked text field</h3>
+                    <p>Default</p>
+                    <input type="date" name="" id="">
+                </div>
+                <div>
+                    <h3>date Dropdown</h3>
+                    <input type="date" name="" id="">
+                </div>
+                <div>
+                    <h3>date Dropdown</h3>
+                    <input type="date" name="" id="">
+                </div>
+                <div>
+                    <h3>filter date dropdown</h3>
+                    <input type="date" name="" id="">
+                </div>
+                <div>
+                    <h3>subscription text field</h3>
+                    <input type="email">
+                    <label for="">Email
+                        <a href="#">
+                        <img src="img/arrow_forward.svg" alt="">
+                        </a>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div>
+            <form action="">
+                <div class="checkbox">
+                    <h3>Checkbox Buttons</h3>
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div class="radio">
+                    <h3>Radio Buttons</h3>
+                    <input type="radio" name="" id="">
+                    <input type="radio" name="" id="">
+                </div>
+                <div>
+                    <h3>Togue</h3>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                      
+                      <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label>
+                    </label>
+                </div>
+                <div>
+                    <h3>like button</h3>
+                    <input type="button" value="">
+                    <input type="button" value="">
 
+                </div>
+                <div>
+                    <h3>rate button</h3>
+                    <div class="stars">
+                        <input type="radio" name="star" class="star-1" id="star-1" />
+                        <label class="star-1" for="star-1">1</label>
+                        <input type="radio" name="star" class="star-2" id="star-2" />
+                        <label class="star-2" for="star-2">2</label>
+                        <input type="radio" name="star" class="star-3" id="star-3" />
+                        <label class="star-3" for="star-3">3</label>
+                        <input type="radio" name="star" class="star-4" id="star-4" />
+                        <label class="star-4" for="star-4">4</label>
+                        <input type="radio" name="star" class="star-5" id="star-5" />
+                        <label class="star-5" for="star-5">5</label>
+                        <span></span>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="btn__map-color">
-            <button>Click me</button>
-            <button>Click me</button>
-            <button>Click me</button>
-            <button>Click me</button>
-            <button>Click me</button>
-            <button>Click me</button>
-            <button>Перейти к оплате</button>
+    <!-- End input map -->
+    <!-- Button map -->
+        <div class="btn__map">
+            <div class="range-slider">
+
+            </div>
+            <div class="btn__map-color">
+                <button>Click me</button>
+                <button>Click me</button>
+                <button>Click me</button>
+                <button>Click me</button>
+                <button>Click me</button>
+                <button>Click me</button>
+                <button>Перейти к оплате</button>
+            </div>
+            <div>
+                <h3>pagination</h3>
+                <div class="pagination">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <p>1 – 12 из 100+ вариантов аренды</p>
+            </div>
         </div>
-        
-    </section>
+
+        <!-- End button map -->
+    </section>    
 </body>
 </html>
