@@ -10,10 +10,10 @@ $gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
 // text style
 $browser-context: 16px; 
-$h1: normal bold rem(24px)/rem(30px) 'Quicksand' sans-serif;
-$h2: normal bold rem(19px)/rem(24px) 'Quicksand' sans-serif;
-$h3: normal bold rem(12px)/rem(15px) 'Montserrat' sans-serif;
-$body: normal normal rem(14px)/rem(24px) 'Montserrat' sans-serif;
+$h1: normal bold 24px/30px 'Quicksand', sans-serif;
+$h2: normal bold 19px/24px 'Quicksand', sans-serif;
+$h3: normal bold 12px/15px 'Montserrat', sans-serif;
+$body: normal normal 14px/24px 'Montserrat', sans-serif;
 
 
 // funtion px to rem
@@ -38,9 +38,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: rem(145px);
+    width: rem(250px);
     height: -webkit-fill-available;
-    background-color: $color-light-grey;
+    background-color: $color-white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 10;
 
 
@@ -66,6 +67,7 @@ body {
             text-decoration: none;
             color: $color-default;
             margin: rem(10px);
+            font: $h1;
         }
 
         &-item:hover {
