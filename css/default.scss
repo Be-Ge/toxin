@@ -1,0 +1,104 @@
+$gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+$color-default: #1F2041;
+$bg-default: #1F2041;
+
+
+// text style
+$browser-context: 16; 
+$h1: normal bold rem(24px)/rem(30px) 'Quicksand' sans-serif;
+$h2: normal bold rem(19px)/rem(24px) 'Quicksand' sans-serif;
+$h3: normal bold rem(12px)/rem(15px) 'Montserrat' sans-serif;
+$body: normal normal rem(14px)/rem(24px) 'Montserrat' sans-serif;
+
+
+// funtion px to rem
+
+@function rem($size) {
+    $remSize: $size/ 16px;
+    @return #{$remSize}rem;
+  }
+
+// end funtion px to rem
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+// header navigation 
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: rem(145px);
+    height: -webkit-fill-available;
+    background-color: white;
+    z-index: 10;
+
+    &__logo {
+        margin: rem(48rem) 0 0 rem(48px);
+    }
+}
+
+
+// colors start
+
+.purple {
+    color: #BC9CFF;
+}
+
+.background-purple {
+    background-color: #BC9CFF;
+}
+
+.green {
+    color: #6FCF97;
+}
+
+.background-green {
+    background-color: #6FCF97;
+}
+
+.default {
+    color: $color-default;
+}
+
+.background-default {
+    background-color: $bg-default;
+}
+
+.blue {
+    color: #575871;
+}
+
+.background-blue {
+    background-color: #575871;
+}
+
+.grey {
+    color: #8e8f9f;
+}
+
+.background-grey {
+    background-color: #8e8f9f;
+}
+
+.light-grey {
+    color: #c7c7cf;
+}
+
+.background-light-grey {
+    background-color: #c7c7cf;
+}
+
+.white {
+    color: #f4f4f5;
+}
+
+.background-white {
+    background-color: #f4f4f5;
+}
+
+/* colors end */

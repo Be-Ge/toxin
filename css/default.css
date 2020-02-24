@@ -1,64 +1,8 @@
 body {
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Montserrat', sans-serif; 
-}
- 
-/* colors start */
-
-.purple {
-    color: #BC9CFF;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.background-purple {
-    background-color: #BC9CFF;
-}
-
-.green {
-    color: #6FCF97;
-}
-
-.background-green {
-    background-color: #6FCF97;
-}
-
-.default {
-    color: #1F2041;
-}
-
-.background-default {
-    background-color: #1F2041;
-}
-
-.blue {
-    color: #575871;
-}
-
-.background-blue {
-    background-color: #575871;
-}
-
-.grey {
-    color: #8e8f9f;
-}
-
-.background-grey {
-    background-color: #8e8f9f;
-}
-
-.light-grey {
-    color: #c7c7cf;
-}
-
-.background-light-grey {
-    background-color: #c7c7cf;
-}
-
-.white {
-    color: #f4f4f5;
-}
-
-.background-white {
-    background-color: #f4f4f5;
-}
 
 /* colors end */
+/*# sourceMappingURL=default.css.map */
