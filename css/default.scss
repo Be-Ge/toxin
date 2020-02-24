@@ -1,10 +1,16 @@
-$gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-$color-default: #1F2041;
-$bg-default: #1F2041;
 
+// color 
+$color-default: #1F2041;
+$color-blue: #575871;
+$color-grey: #8e8f9f;
+$color-light-grey: #c7c7cf;
+$color-white: #f4f4f5;
+$color-purple: #BC9CFF;
+$color-green: #6FCF97;
+$gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
 // text style
-$browser-context: 16; 
+$browser-context: 16px; 
 $h1: normal bold rem(24px)/rem(30px) 'Quicksand' sans-serif;
 $h2: normal bold rem(19px)/rem(24px) 'Quicksand' sans-serif;
 $h3: normal bold rem(12px)/rem(15px) 'Montserrat' sans-serif;
@@ -32,22 +38,62 @@ body {
     display: flex;
     flex-direction: column;
     position: fixed;
+    top: 0;
+    left: 0;
     width: rem(145px);
     height: -webkit-fill-available;
-    background-color: white;
+    background-color: $color-light-grey;
     z-index: 10;
 
+
     &__logo {
-        margin: rem(48rem) 0 0 rem(48px);
+        display: flex;
+        justify-content: center;
+        margin-top: rem(48px);
+    }
+    }
+
+    &__navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: rem(30px);
+
+        &-menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        &-item {
+            display: block;
+            text-decoration: none;
+            color: $bg-default;
+            margin: rem(10px);
+        }
+
+        &-item:hover {
+            color: rgba(31, 32, 65, 0.5);
+        }
     }
 }
 
+// style section 
+.section__style {
+    display: flex;
+    justify-content: space-around;
+
+}
 
 // colors start
 
-.purple {
-    color: #BC9CFF;
+.square {
+    width: rem(70px);
+    height: rem(70px);
+    border-radius: rem(6px);
 }
+
+
+
 
 .background-purple {
     background-color: #BC9CFF;

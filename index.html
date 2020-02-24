@@ -15,92 +15,100 @@
         <a href="#" class="header__logo">
             <img src="img/logo.svg" alt="logo">
         </a>
-        <nav>
-            <a class="nav"  href="#colors">Colors</a>
-            <a class="nav" href="#type">Type</a>
-            <a class="nav" href="#input">Input</a>
-            <a class="nav" href="#btn">Buttons</a>
+        <nav class="header__navigation">
+            <ul class="header__navigation-menu">
+            <li><a class="header__navigation-item"  href="#colors">Colors</a></li> 
+            <li><a class="header__navigation-item" href="#type">Type</a></li> 
+            <li><a class="header__navigation-item" href="#input">Input</a></li> 
+            <li><a class="header__navigation-item" href="#btn">Buttons</a></li> 
+            </ul>
         </nav>
     </header>
     <!-- End main navigation -->
     <!-- Main colors -->
-    <section class="colors" name="colors">
-        <div class="border-shade"> 
-            <div class="square background-default"></div>
-            <p class="colors-name">Dark Shade 100% </p>
-            <p class="colors-rgba">#1F2041</p>
+    <section class="section__style" name="colors">
+        <div class="section__colors">
+            <div class="border-shade"> 
+                <div class="square background-default"></div>
+                <div class="section__colors-text">
+                <p class="colors-name">Dark Shade 100% </p>
+                <p class="colors-rgba">#1F2041</p>
+                </div>
+            </div>
+            <div class="border-shade"> 
+                <div class="square background-blue"></div>
+                <div>
+                <p class="colors-name"> Dark Shade 75%</p>
+                <p class="colors-rgba">#1F2041</p>
+                </div>
+            </div>
+            <div class="border-shade">
+                <div class="square background-grey"></div>
+                <p class="colors-name"> Dark Shade 50%</p>
+                <p class="colors-rgba">#1F2041</p>
+            </div>
+            <div class="border-shade">
+                <div class="square background-light-grey"></div>
+                <p class="colors-name">Dark Shade 25%</p>
+                <p class="colors-rgba">#1F2041</p>  
+            </div>
+            <div class="border-shade"> 
+                <div class="square background-white"></div>
+                <p class="colors-name">Dark Shade 5%</p>
+                <p class="colors-rgba">#1F2041</p>
+            </div>
+            <div class="border-purple">
+                <div class="square background-purple"></div> 
+                <p class="colors-name">Purple</p>
+                <p class="colors-rgba">#BC9CFF</p> 
+            </div>
+            <div class="border-green"> 
+                <div class="square background-green"></div>
+                <p class="colors-name">Green</p>
+                <p class="colors-rgba">#6FCF97</p>
+            </div>
         </div>
-        <div class="border-shade"> 
-            <div class="square background-blue"></div>
-            <p class="colors-name"> Dark Shade 75%</p>
-            <p class="colors-rgba">#1F2041</p>
+        <!-- End main colors -->
+        <!-- Main title types  -->
+        <div class="type" name="type">
+            <div class="type-style">
+                <p class="title">
+                    H1
+                </p>
+                <h1>
+                    This one is the sub-section or
+                    widget title
+                </h1>
+            </div>
+            <div class="type-style">
+                <p class="title">
+                    H2
+                </p>
+                <h2>
+                    Next one is the item title inside
+                    widgets
+                </h2>
+            </div>
+            <div class="type-style">
+                <p class="title">
+                    H3
+                </p>
+                <h3 >
+                    This is a label or CTA text
+                </h3>
+            </div>
+            <div class="type-style">
+                <p class="title">
+                    Body
+                </p>
+                <p class="text">
+                    This is the body text which is used for most
+                    of the design, like paragraphs, lists, etc.
+                </p>
+            </div>
         </div>
-        <div class="border-shade">
-            <div class="square background-grey"></div>
-            <p class="colors-name"> Dark Shade 50%</p>
-            <p class="colors-rgba">#1F2041</p>
-        </div>
-        <div class="border-shade">
-            <div class="square background-light-grey"></div>
-            <p class="colors-name">Dark Shade 25%</p>
-            <p class="colors-rgba">#1F2041</p>  
-        </div>
-        <div class="border-shade"> 
-            <div class="square background-white"></div>
-            <p class="colors-name">Dark Shade 5%</p>
-            <p class="colors-rgba">#1F2041</p>
-        </div>
-        <div class="border-purple">
-            <div class="square background-purple"></div> 
-            <p class="colors-name">Purple</p>
-            <p class="colors-rgba">#BC9CFF</p> 
-        </div>
-        <div class="border-green"> 
-            <div class="square background-green"></div>
-            <p class="colors-name">Green</p>
-            <p class="colors-rgba">#6FCF97</p>
-        </div>
-    </section>
-    <!-- End main colors -->
-    <!-- Main title types  -->
-    <section class="type" name="type">
-        <div class="type-style">
-             <p class="title">
-                H1
-             </p>
-             <h1>
-                This one is the sub-section or
-                widget title
-             </h1>
-        </div>
-        <div class="type-style">
-             <p class="title">
-                H2
-             </p>
-             <h2>
-                Next one is the item title inside
-                widgets
-             </h2>
-        </div>
-        <div class="type-style">
-             <p class="title">
-                H3
-             </p>
-             <h3 >
-                This is a label or CTA text
-             </h3>
-        </div>
-        <div class="type-style">
-             <p class="title">
-                Body
-             </p>
-             <p class="text">
-                This is the body text which is used for most
-                of the design, like paragraphs, lists, etc.
-             </p>
-        </div>
-    </section>
-    <!-- End main title styles -->
+        <!-- End main title styles -->
+    </section>  
     <!-- Input map -->
     <section class="input__map" name="input__map">
     <form action="">

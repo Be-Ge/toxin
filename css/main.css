@@ -1,13 +1,4 @@
 
-.nav {
-    display: block;
-    text-decoration: none;
-    color: #1F2041;
-}
-
-.nav:hover {
-    color: rgba(31, 32, 65, 0.5);
-}
 
 .colors {
     display: inline-block;
@@ -38,9 +29,6 @@
 .type {
     width: 403px;
     height: 321px;
-    position: absolute;
-    left: 846px;
-    top: 145px;
 }
 
 .type-style {
