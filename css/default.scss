@@ -370,6 +370,11 @@ body {
         justify-content: space-around;
     }
 
+    &-item:hover {
+        color: $color-default;
+        transition: all .3s;
+    }
+
     &-login {
         border: rem(2px) solid;
         border-radius: rem(22px);
@@ -380,7 +385,11 @@ body {
         text-decoration: none;
         font-size: rem(12px);
         line-height: rem(15px);
+    }
 
+    &-login:hover {
+        opacity: 0.5;
+        transition: all .3s;
     }
 
     &-register {
@@ -391,8 +400,12 @@ body {
         font-weight: 600;
         text-decoration: none;
         font-size: rem(12px);
-        line-height: rem(15px);
-        
+        line-height: rem(15px); 
+    }
+
+    &-register:hover {
+        opacity: 0.5;
+        transition: all .3s;
     }
 
     &-user {
@@ -404,4 +417,30 @@ body {
         color: $color-grey;
     }
 
+}
+
+
+//  creative footer
+
+.creative {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 10px 20px $color-grey;
+    margin-bottom: rem(40px);
+    height: rem(400px);
+
+    &__paragraph {
+        width: 40%;
+        text-align: center;
+        margin-top: rem(20px);
+        font: $body;
+        color: $color-blue;
+
+    }
+
+    &__social a {
+        margin: 0 rem(10px);
+    }
 }
