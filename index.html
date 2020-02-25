@@ -139,14 +139,23 @@
                     <h3>Text Field</h3>
                     <p class="input__paragraph">Hover / Focus</p>
                     </div>
-                    <input type="text">
+                    <input class="input__email-hover" type="text">
+                    <label for="">This is pretty awesome</label>
                 </div>
                 <div class="input__box">
                     <div class="input__text">
                     <h3>Dropdown</h3>
                     <p class="input__paragraph">Default</p>
                     </div>
-                    <inpuT:date></inpuT:date>
+                    <label for="">Сколько гостей</label>
+                    <input list="guest" name="guests">
+                    <datalist id="guests">
+                        <option value="взрослые">
+                        <option value="дети">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
                 </div>
                 <div class="input__box">
                     <div class="input__text">
@@ -270,31 +279,31 @@
       <section class="frame">
           <header class="standart__nav">
             <a href="#" class="full-logo">
-                <img src="" alt="full logo">
+                <img src="img/full-logo.svg" alt="full logo">
             </a>
-            <ul>
-                <li><a href="#">Menu </a></li>
-                <li><a href="#">Menu </a></li>
-                <li><a href="#">Menu </a></li>
-                <li><a href="#">Menu </a></li>
-                <li><a href="#">Menu </a></li>
-                <li><a href="#">Menu </a></li>
-                <li><a href="#">Button</a></li>
-                <li><a href="#">Button</a></li>
+            <ul class="standart__nav-menu">
+                <li><a class="standart__nav-item" href="#">Home </a></li>
+                <li><a class="standart__nav-item" href="#">About Us </a></li>
+                <li><a class="standart__nav-item" href="#">Services </a></li>
+                <li><a class="standart__nav-item" href="#">Careers </a></li>
+                <li><a class="standart__nav-item" href="#">News </a></li>
+                <li><a class="standart__nav-item" href="#">Documentation </a></li>
+                <li><a class="standart__nav-login" href="#">Login</a></li>
+                <li><a class="standart__nav-register" href="#">REGISTER</a></li>
             </ul>
           </header>
           <header class="standart__nav">
             <a href="#" class="full-logo">
-                <img src="" alt="full logo">
+                <img src="img/full-logo.svg" alt="full logo">
             </a>
-            <ul>
-                <li><a href="#">Menu </a></li>
-                <li><a href="#">Menu </a></li>
-                <li><a href="#">Menu </a></li>
-                <li><a href="#">Menu </a></li>
-                <li><a href="#">Menu </a></li>
-                <li><a href="#">Menu </a></li>
-                <li><a href="#">Button</a></li>
+            <ul class="standart__nav-menu">
+                <li><a class="standart__nav-item" href="#">Home </a></li>
+                <li><a class="standart__nav-item" href="#">About Us </a></li>
+                <li><a class="standart__nav-item" href="#">Services </a></li>
+                <li><a class="standart__nav-item" href="#">Careers </a></li>
+                <li><a class="standart__nav-item" href="#">News </a></li>
+                <li><a class="standart__nav-item" href="#">Documentation </a></li>
+                <li><a class="standart__nav-user">Cosmin Negoita</a></li>
             </ul>
           </header>
       </section>

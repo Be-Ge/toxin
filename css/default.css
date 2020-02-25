@@ -199,16 +199,107 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 0.25rem;
+  outline: none;
+}
+
+.input__email:hover {
+  border: 1px solid #8e8f9f;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.25rem;
+  height: 2.75rem;
+}
+
+.input__email-hover {
+  border: 1px solid #8e8f9f;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.25rem;
+  height: 2.75rem;
+  outline: none;
 }
 
 .input__paragraph {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
   text-align: right;
   text-transform: uppercase;
+  color: #8e8f9f;
+}
+
+.frame {
+  margin-left: 300px;
+}
+
+.standart__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 10px 20px #8e8f9f;
+          box-shadow: 0px 10px 20px #8e8f9f;
+  margin-bottom: 2.5rem;
+  height: 4.375rem;
+}
+
+.standart__nav-menu {
+  list-style: none;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.standart__nav-item {
+  text-decoration: none;
+  font: normal normal 14px/24px "Montserrat", sans-serif;
+  color: #8e8f9f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.standart__nav-login {
+  border: 0.125rem solid;
+  border-radius: 1.375rem;
+  padding: 0.625rem 1.25rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #BC9CFF;
+  text-decoration: none;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+}
+
+.standart__nav-register {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 1.375rem;
+  padding: 0.625rem 1.25rem;
+  color: #f4f4f5;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+}
+
+.standart__nav-user {
+  border-left: 0.0625rem solid #c7c7cf;
+  padding-left: 1.875rem;
+  width: 1px;
+  height: 30px;
+  font: normal normal 14px/24px "Montserrat", sans-serif;
   color: #8e8f9f;
 }
 /*# sourceMappingURL=default.css.map */

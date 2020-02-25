@@ -308,15 +308,100 @@ body {
     border: 1px solid $color-light-grey;
     box-sizing: border-box;
     border-radius: rem(4px);
+    outline: none;
+
+    &:hover{
+        border: 1px solid $color-grey;
+        box-sizing: border-box;
+        border-radius: rem(4px);
+        height: rem(44px);
+    }
+
+    &-hover {
+        border: 1px solid $color-grey;
+        box-sizing: border-box;
+        border-radius: rem(4px);
+        height: rem(44px);
+        outline: none;
+    }
 }
 
 .input__paragraph {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: rem(12px);
+    line-height: rem(15px);
     text-align: right;
     text-transform: uppercase;
     color: $color-grey;
+}
+
+
+
+
+// Headers and footers section
+
+.frame {
+    margin-left: 300px;
+}
+
+.standart__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 10px 20px $color-grey;
+    margin-bottom: rem(40px);
+    height: rem(70px);
+
+    &-menu {
+        list-style: none;
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    &-item {
+        text-decoration: none;
+        font: $body;
+        color: $color-grey;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &-login {
+        border: rem(2px) solid;
+        border-radius: rem(22px);
+        padding: rem(10px) rem(20px);
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $color-purple;
+        text-decoration: none;
+        font-size: rem(12px);
+        line-height: rem(15px);
+
+    }
+
+    &-register {
+        background: $gradient;
+        border-radius: rem(22px);
+        padding: rem(10px) rem(20px);
+        color: $color-white;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: rem(12px);
+        line-height: rem(15px);
+        
+    }
+
+    &-user {
+        border-left: rem(1px) solid $color-light-grey;
+        padding-left: rem(30px);
+        width: 1px;
+        height: 30px;
+        font: $body;
+        color: $color-grey;
+    }
+
 }
