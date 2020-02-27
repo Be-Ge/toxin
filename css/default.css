@@ -274,6 +274,26 @@ body {
   transition: all .3s;
 }
 
+.label__email-arrow {
+  width: 100%;
+  position: relative;
+  padding: 0.625rem 3rem;
+}
+
+.label__email-arrow::after {
+  content: " ";
+  display: inline-block;
+  background: url(../img/arrow_forward.svg) no-repeat;
+  background-position: right;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+}
+
 .btn__map-color {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,6 +379,10 @@ body {
   font: normal bold 12px/15px "Montserrat", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
+  width: 20rem;
+  text-align: center;
+  position: relative;
+  padding: 0.625rem 3rem;
 }
 
 .btn-link:hover {
@@ -372,8 +396,28 @@ body {
   display: inline-block;
   background: url(../img/arrow_forward-white.svg) no-repeat;
   background-position: right;
-  width: 44px;
-  height: 100%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+}
+
+.checkbox-item {
+  visibility: hidden;
+}
+
+.checkbox-item::after {
+  content: " ";
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  width: 1.375rem;
+  height: 1.375rem;
+  display: inline-block;
 }
 
 .frame {

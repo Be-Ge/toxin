@@ -371,6 +371,7 @@ body {
     left: rem(15px);
     color: $color-grey;
     z-index: -1;
+  
 }
 
 .input__email:focus ~ .label__email-link, 
@@ -379,6 +380,26 @@ body {
     transition: all .3s;
 }
 
+
+.label__email-arrow {
+    width: 100%;
+    position: relative;
+    padding: 0.625rem 3rem;
+
+    &::after {
+        content: " ";
+        display: inline-block;
+        background: url(../img/arrow_forward.svg) no-repeat;
+        background-position: right;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 15px;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+
+}
 
 
 // buttons
@@ -462,6 +483,10 @@ body {
     font: $btn;
     text-decoration: none;
     text-transform: uppercase;
+    width: rem(320px);
+    text-align: center;
+    position: relative;
+    padding: 0.625rem 3rem;
 
     &:hover {
         opacity: 0.5;
@@ -469,14 +494,36 @@ body {
     }
 
 
+
     &::after {
-        content:" ";
+        content: " ";
         display: inline-block;
         background: url(../img/arrow_forward-white.svg) no-repeat;
         background-position: right;
-        width: 44px;
-        height: 100%;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 15px;
+        transform: translateY(-50%);
+        top: 50%;
     }
+}
+
+// checkbox buttons
+
+.checkbox-item {
+    visibility: hidden;
+
+    &::after {
+        content: " ";
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: rem(22px);
+        height: rem(22px);
+        display: inline-block;
+    }
+
 }
 
 // Headers and footers section
