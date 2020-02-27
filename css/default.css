@@ -274,6 +274,108 @@ body {
   transition: all .3s;
 }
 
+.btn__map-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 260px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.button-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 1.375rem;
+  padding: 0.625rem 1.25rem;
+  color: #f4f4f5;
+  text-decoration: none;
+  font: normal bold 12px/15px "Montserrat", sans-serif;
+  border: none;
+  text-transform: uppercase;
+}
+
+.button-bg:hover {
+  opacity: 0.5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.button-trans {
+  border: 0.125rem solid;
+  border-radius: 1.375rem;
+  padding: 0.625rem 1.25rem;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  text-decoration: none;
+  font: normal bold 12px/15px "Montserrat", sans-serif;
+  background: transparent;
+}
+
+.button-trans:hover {
+  opacity: 0.5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.button-color {
+  padding: 0.625rem 1.25rem;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  text-decoration: none;
+  font: normal bold 12px/15px "Montserrat", sans-serif;
+  background: transparent;
+  border: none;
+}
+
+.button-color:hover {
+  opacity: 0.5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.button-grey {
+  padding: 0.625rem 1.25rem;
+  text-transform: uppercase;
+  color: #575871;
+  text-decoration: none;
+  font: normal bold 12px/15px "Montserrat", sans-serif;
+  background: transparent;
+  border: none;
+}
+
+.button-grey:hover {
+  opacity: 0.5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn-link {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 1.375rem;
+  padding: 0.625rem 1.25rem;
+  color: #f4f4f5;
+  font: normal bold 12px/15px "Montserrat", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-link:hover {
+  opacity: 0.5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn-link::after {
+  content: " ";
+  display: inline-block;
+  background: url(../img/arrow_forward-white.svg) no-repeat;
+  background-position: right;
+  width: 44px;
+  height: 100%;
+}
+
 .frame {
   margin-left: 300px;
 }
