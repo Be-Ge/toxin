@@ -147,16 +147,40 @@
                     <div class="input__text">
                     <h3>Dropdown</h3>
                     <p class="input__paragraph">Default</p>
+                    <div class="select-dropdown">
+                        <input type="text" value="Сколько гостей" readonly />
+                       
+                        <ul>
+                            <li>
+                                <label for="">спальни</label>
+                                
+                                <div class="number-input">
+                                    <button class="js-input-button" data-change="decrease">-</button>
+                                    <input type="number" min="0" class="js-input" value="0" />
+                                    <button class="js-input-button" data-change="increase">+</button>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="">кровати</label>
+                                
+                                <div class="number-input">
+                                    <button class="js-input-button" data-change="decrease">-</button>
+                                    <input type="number" min="0" class="js-input" value="0" />
+                                    <button class="js-input-button" data-change="increase">+</button>
+                                </div>
+                            </li>
+                            <li>  <label for="">ванные комнаты</label>
+                                
+                                <div class="number-input">
+                                    <button class="js-input-button" data-change="decrease">-</button>
+                                    <input type="number" min="0" class="js-input" value="0" />
+                                    <button class="js-input-button" data-change="increase">+</button>
+                                </div>
+                            </li>
+                            <li>Never</li>
+                        </ul>
                     </div>
-                    <label for="">Сколько гостей</label>
-                    <input list="guest" name="guests">
-                    <datalist id="guests">
-                        <option value="взрослые">
-                        <option value="дети">
-                        <option value="Chrome">
-                        <option value="Opera">
-                        <option value="Safari">
-                    </datalist>
+                    </div>
                 </div>
                 <div class="input__box">
                     <div class="input__text">
@@ -249,7 +273,7 @@
                 <button class="button-trans">Click me</button>
                 <button class="button-color">Click me</button>
                 <button class="button-grey">Click me</button>
-                <a href="#" class="btn-link">
+                <a class="btn-link">
                     Перейти к оплате
                 </a>
             </div>
@@ -257,12 +281,12 @@
                 <h3>pagination</h3>
                 <div class="pagination">
                     <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">15</a></li>
+                        <li><a href="#"><img src="img/arrow_forward-white.svg" alt="arrow"></a></li>
                     </ul>
                 </div>
                 <p>1 – 12 из 100+ вариантов аренды</p>
@@ -375,5 +399,6 @@
               </div>
           </footer>
       </section>
+      <script src="js/main.js"></script>
 </body>
 </html>
