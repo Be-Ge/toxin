@@ -22,8 +22,9 @@
             <ul class="header__navigation-menu">
             <li><a class="header__navigation-item"  href="#colors">Colors</a></li> 
             <li><a class="header__navigation-item" href="#type">Type</a></li> 
-            <li><a class="header__navigation-item" href="#input">Input</a></li> 
+            <li><a class="header__navigation-item" href="#input__map">Input</a></li> 
             <li><a class="header__navigation-item" href="#btn">Buttons</a></li> 
+            <li><a class="header__navigation-item" href="#frame">Header and footer</a></li> 
             </ul>
         </nav>
     </header>
@@ -131,16 +132,16 @@
                     <h3>Text Field</h3>
                     <p class="input__paragraph">Default</p>
                     </div>
-                    <input class="input__email" type="email">
-                    <label for="">Email</label>
+                    <input class="input__email" type="email" placeholder=" ">
+                    <label class="label__email" for="">Email</label>
                 </div>
                 <div class="input__box">
                     <div class="input__text">
                     <h3>Text Field</h3>
                     <p class="input__paragraph">Hover / Focus</p>
                     </div>
-                    <input class="input__email-hover" type="text">
-                    <label for="">This is pretty awesome</label>
+                    <input class="input__email-hover" type="text" placeholder=" ">
+                    <label for="" class="label__email">This is pretty awesome</label>
                 </div>
                 <div class="input__box">
                     <div class="input__text">
@@ -176,10 +177,10 @@
                     <h3>filter date dropdown</h3>
                     <input type="date" name="" id="">
                 </div>
-                <div>
+                <div class="input__box" >
                     <h3>subscription text field</h3>
-                    <input type="email">
-                    <label for="">Email
+                    <input class="input__email"  type="email" placeholder=" ">
+                    <label class="label__email-link" for="">Email
                         <a href="#">
                         <img src="img/arrow_forward.svg" alt="">
                         </a>
@@ -276,13 +277,13 @@
     </section>
       <!-- End cards section  -->
       <!-- Headers and footers section -->
-      <section class="frame">
+      <section class="frame" id="frame">
           <header class="standart__nav">
             <a href="#" class="full-logo">
                 <img src="img/full-logo.svg" alt="full logo">
             </a>
             <ul class="standart__nav-menu">
-                <li><a class="standart__nav-item" href="#">Home </a></li>
+                <li><a class="standart__nav-item active" href="#">Home </a></li>
                 <li><a class="standart__nav-item" href="#">About Us </a></li>
                 <li><a class="standart__nav-item" href="#">Services </a></li>
                 <li><a class="standart__nav-item" href="#">Careers </a></li>
@@ -297,7 +298,7 @@
                 <img src="img/full-logo.svg" alt="full logo">
             </a>
             <ul class="standart__nav-menu">
-                <li><a class="standart__nav-item" href="#">Home </a></li>
+                <li><a class="standart__nav-item active" href="#">Home </a></li>
                 <li><a class="standart__nav-item" href="#">About Us </a></li>
                 <li><a class="standart__nav-item" href="#">Services </a></li>
                 <li><a class="standart__nav-item" href="#">Careers </a></li>
@@ -307,7 +308,57 @@
             </ul>
           </header>
 
-          <footer>
+          <footer class="widgets">
+              <div class="widgets__nav">
+                  <div class="widgets__nav-logo">
+                      <a href="#">
+                          <img src="img/full-logo.svg" alt="full logo">
+                      </a>
+                      <p class="footer-text">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.</p>
+                  </div>
+                  <div>
+                      <ul class="widgets__nav-items">
+                          <li><h3>Navigation</h3></li>
+                          <li><a class="widgets__nav-item" href="#">About Us</a></li>
+                          <li><a class="widgets__nav-item" href="#">News</a></li>
+                          <li><a class="widgets__nav-item" href="#">Support</a></li>
+                          <li><a class="widgets__nav-item" href="#">Products</a></li>
+                      </ul>
+                  </div>
+                  <div>
+                    <ul class="widgets__nav-items">
+                        <li><h3>ABOUT US</h3></li>
+                        <li><a class="widgets__nav-item" href="#">Who we are</a></li>
+                        <li><a class="widgets__nav-item" href="#">Our team</a></li>
+                        <li><a class="widgets__nav-item" href="#">Careers</a></li>
+                        <li><a class="widgets__nav-item" href="#">Investors</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="widgets__nav-items">
+                        <li><h3>Support</h3></li>
+                        <li><a class="widgets__nav-item" href="#">Documentation</a></li>
+                        <li><a class="widgets__nav-item" href="#">Community</a></li>
+                        <li><a class="widgets__nav-item" href="#">Get in Touch</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Subscribe to our newsletter</h3>
+                    <p class="footer-text">Receive our latest news and 
+                        promotions in your inbox!</p>
+                    <input type="email">
+                    <label for="">Your email address</label>
+                </div>
+              </div>
+              <div class="widgets__social">
+                <div class="widgets__social-copy">Copyright © 2018 Toxin UI Kit. All rights reserved.</div>
+                <div class="">
+                    <a href="#"><img src="img/twitter.svg" alt="social logo"></a>
+                    <a href="#"><img src="img/fb.svg" alt="social logo"></a>
+                    <a href="#"><img src="img/insta.svg" alt="social logo"></a>
+                </div>
+              </div>
 
           </footer>
 

@@ -294,6 +294,7 @@ body {
     display: flex;
     flex-direction: column;
     width: rem(320px);
+    position: relative;
 }
 
 .input__text {
@@ -309,6 +310,10 @@ body {
     box-sizing: border-box;
     border-radius: rem(4px);
     outline: none;
+    background: transparent;
+    padding-left: rem(15px);
+    font: $body;
+    color: $color-blue;
 
     &:hover{
         border: 1px solid $color-grey;
@@ -323,7 +328,29 @@ body {
         border-radius: rem(4px);
         height: rem(44px);
         outline: none;
+        background: transparent;
+        padding-left: rem(15px);
     }
+}
+
+.label__email {
+    position: absolute;
+    bottom: rem(13px);
+    left: rem(15px);
+    color: $color-grey;
+    z-index: -1;
+}
+
+.input__email:focus ~ .label__email, 
+.input__email:not(:placeholder-shown) ~ .label__email {
+    color: transparent; 
+    transition: all .3s;
+}
+
+.input__email-hover:focus ~ .label__email, 
+.input__email-hover:not(:placeholder-shown) ~ .label__email {
+    color: transparent; 
+    transition: all .3s;
 }
 
 .input__paragraph {
@@ -335,6 +362,20 @@ body {
     text-align: right;
     text-transform: uppercase;
     color: $color-grey;
+}
+
+.label__email-link {
+    position: absolute;
+    bottom: rem(13px);
+    left: rem(15px);
+    color: $color-grey;
+    z-index: -1;
+}
+
+.input__email:focus ~ .label__email-link, 
+.input__email:not(:placeholder-shown) ~ .label__email-link {
+    color: transparent; 
+    transition: all .3s;
 }
 
 
@@ -350,7 +391,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 10px 20px $color-grey;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     margin-bottom: rem(40px);
     height: rem(70px);
 
@@ -373,6 +414,10 @@ body {
     &-item:hover {
         color: $color-default;
         transition: all .3s;
+    }
+
+    &-item.active {
+        font-weight: bold;
     }
 
     &-login {
@@ -419,6 +464,58 @@ body {
 
 }
 
+// widgets footer
+
+.widgets {
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    margin-bottom: rem(40px);
+
+    &__nav {
+        display: flex;
+        justify-content: space-around;
+        height: rem(372px);
+        align-items: center;
+
+        &-logo {
+            width: rem(320px);
+        }
+
+        &-items {
+            list-style: none;
+        }
+
+        &-item {
+            text-decoration: none;
+            font: $body;
+            color: $color-grey;
+        }
+
+        &-item:hover {
+            color: $color-default;
+            transition: all .3s;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-around;
+        height: rem(70px);
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        align-items: center;
+
+        &-copy {
+            font: $body;
+            color: $color-blue;
+        }
+    }
+}
+
+.footer-text {
+    font: $body;
+    color: $color-blue;
+    width: rem(260px);
+}
+
 
 //  creative footer
 
@@ -427,7 +524,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 10px 20px $color-grey;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     margin-bottom: rem(40px);
     height: rem(400px);
 
@@ -442,5 +539,7 @@ body {
 
     &__social a {
         margin: 0 rem(10px);
+        
     }
 }
+
