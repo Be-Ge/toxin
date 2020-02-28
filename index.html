@@ -201,11 +201,13 @@
                     <h3>filter date dropdown</h3>
                     <input type="date" name="" id="">
                 </div>
+                <h3>subscription text field</h3>
                 <div class="input__box" >
-                    <h3>subscription text field</h3>
                     <input class="input__email"  type="email" placeholder=" ">
-                    <label class="label__email-link" for="">Email
+                    <label class="label__email-link" for="">
+                        <span>Email</span> 
                         <a  class="label__email-arrow" href="#">
+                            <img src="img/arrow_forward.svg" alt="arrow">
                         </a>
                     </label>
                 </div>
@@ -215,14 +217,25 @@
             <form action="">
                 <h3>Checkbox Buttons</h3>
                 <div class="checkbox">
-                    <input class="checkbox-item" type="checkbox" name="" id="">
-                    <input class="checkbox-item" type="checkbox" name="" id="">
-                    <input class="checkbox-item" type="checkbox" name="" id="">
+                    <input class="checkbox-input" type="checkbox" name="" id="inputCheckbox">
+                    <label for="inputCheckbox" class="checkbox-label">Можно курить</label>
+                </div>
+                <div class="checkbox">
+                    <input class="checkbox-input" type="checkbox" name="" id="inputCheckbox-pat">
+                    <label for="inputCheckbox-pat" class="checkbox-label">Можно с питомцами</label>
+                </div>
+                <div class="checkbox">
+                    <input class="checkbox-input" type="checkbox" name="" id="inputCheckbox-guest">
+                    <label for="inputCheckbox-guest" class="checkbox-label">Можно пригласить гостей (до 10 человек)</label>
+                </div>
+                <h3>Radio Buttons</h3>
+                <div class="radio">
+                    <input class="radio__input" type="radio" name="male" id="inputRadio-man">
+                    <label  class="radio__label" for="inputRadio-man">Мужчина</label>
                 </div>
                 <div class="radio">
-                    <h3>Radio Buttons</h3>
-                    <input type="radio" name="" id="">
-                    <input type="radio" name="" id="">
+                    <input class="radio__input" type="radio" name="male" id="inputRadio-woman">
+                    <label class="radio__label" for="inputRadio-woman">Женщина</label>
                 </div>
                 <div>
                     <h3>Togue</h3>

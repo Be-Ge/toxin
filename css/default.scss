@@ -371,7 +371,10 @@ body {
     left: rem(15px);
     color: $color-grey;
     z-index: -1;
-  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .input__email:focus ~ .label__email-link, 
@@ -383,21 +386,8 @@ body {
 
 .label__email-arrow {
     width: 100%;
-    position: relative;
-    padding: 0.625rem 3rem;
-
-    &::after {
-        content: " ";
-        display: inline-block;
-        background: url(../img/arrow_forward.svg) no-repeat;
-        background-position: right;
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        right: 15px;
-        transform: translateY(-50%);
-        top: 50%;
-    }
+    display: flex;
+    justify-content: flex-end;
 
 }
 
@@ -589,20 +579,127 @@ body {
 
 // checkbox buttons
 
-.checkbox-item {
-    visibility: hidden;
+.checkbox {
+    position: relative;
+    width: rem(200px);
 
-    &::after {
-        content: " ";
-        border: 1px solid rgba(31, 32, 65, 0.25);
-        box-sizing: border-box;
-        border-radius: 4px;
-        width: rem(22px);
-        height: rem(22px);
-        display: inline-block;
+    &-input {
+        appearance: none;
+        position: absolute;
+
     }
 
+    &-label {
+        font: $body;
+        color: $color-grey;
+        padding-left: rem(25px);
+        cursor: pointer;
+        display: block;
+
+        &::before {
+            content: " ";
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            width: rem(20px);
+            height: rem(20px);
+            display: inline-block;
+            position: absolute;
+            top: 2px;
+            left: 0;
+            z-index: 1;
+        }
+
+        &::after {
+            content: " ";
+            border: 1px solid $color-purple;
+            box-sizing: border-box;
+            border-radius: 4px;
+            width: rem(20px);
+            height: rem(20px);
+            display: inline-block;
+            background: url(../img/check.svg) no-repeat;
+            background-size: rem(18px) rem(15px);
+            position: absolute;
+            top: 2px;
+            left: 0;
+            z-index: 2;
+            opacity: 0;
+        }
+
+    }
 }
+
+.checkbox-input:checked + .checkbox-label:after {
+    opacity: 1;
+    transition: all .3s;
+
+}
+
+
+// radio buttons
+
+.radio {
+    position: relative;
+
+    &__input {
+        appearance: none;
+        position: absolute;
+
+    }
+
+    &__label {
+        font: $body;
+        color: $color-grey;
+        padding-left: rem(25px);
+        cursor: pointer;
+        display: inline-block;
+
+        &::before {
+            content: " ";
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 10px;
+            width: rem(20px);
+            height: rem(20px);
+            display: inline-block;
+            position: absolute;
+            top: 2px;
+            left: 0;
+            z-index: 1;
+            transition: all .3s;
+        }
+
+        &::after {
+            content: " ";
+            border: 1px solid $color-purple;
+            box-sizing: border-box;
+            width: rem(12px);
+            height: rem(12px);
+            display: inline-block;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border-radius: 10px;
+            position: absolute;
+            top: 6px;
+            left: 4px;
+            z-index: 3;
+            opacity: 0;
+            transition: all .3s;
+        }
+
+    }
+}
+
+
+.radio__input:checked + .radio__label:before {
+    border: 1px solid #BC9CFF;
+
+}
+
+.radio__input:checked + .radio__label:after {
+    opacity: 1;
+}
+
 
 // Headers and footers section
 

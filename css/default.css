@@ -265,6 +265,16 @@ body {
   left: 0.9375rem;
   color: #8e8f9f;
   z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
 }
 
 .input__email:focus ~ .label__email-link,
@@ -276,22 +286,12 @@ body {
 
 .label__email-arrow {
   width: 100%;
-  position: relative;
-  padding: 0.625rem 3rem;
-}
-
-.label__email-arrow::after {
-  content: " ";
-  display: inline-block;
-  background: url(../img/arrow_forward.svg) no-repeat;
-  background-position: right;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 15px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .select-dropdown {
@@ -496,19 +496,127 @@ body {
   top: 50%;
 }
 
-.checkbox-item {
-  visibility: hidden;
+.checkbox {
+  position: relative;
+  width: 12.5rem;
 }
 
-.checkbox-item::after {
+.checkbox-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+
+.checkbox-label {
+  font: normal normal 14px/24px "Montserrat", sans-serif;
+  color: #8e8f9f;
+  padding-left: 1.5625rem;
+  cursor: pointer;
+  display: block;
+}
+
+.checkbox-label::before {
   content: " ";
   border: 1px solid rgba(31, 32, 65, 0.25);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  width: 1.375rem;
-  height: 1.375rem;
+  width: 1.25rem;
+  height: 1.25rem;
   display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  z-index: 1;
+}
+
+.checkbox-label::after {
+  content: " ";
+  border: 1px solid #BC9CFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  background: url(../img/check.svg) no-repeat;
+  background-size: 1.125rem 0.9375rem;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+}
+
+.checkbox-input:checked + .checkbox-label:after {
+  opacity: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.radio {
+  position: relative;
+}
+
+.radio__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+
+.radio__label {
+  font: normal normal 14px/24px "Montserrat", sans-serif;
+  color: #8e8f9f;
+  padding-left: 1.5625rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.radio__label::before {
+  content: " ";
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.radio__label::after {
+  content: " ";
+  border: 1px solid #BC9CFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 0.75rem;
+  height: 0.75rem;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 10px;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  z-index: 3;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.radio__input:checked + .radio__label:before {
+  border: 1px solid #BC9CFF;
+}
+
+.radio__input:checked + .radio__label:after {
+  opacity: 1;
 }
 
 .frame {
