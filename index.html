@@ -246,11 +246,11 @@
                     <input class="switch__input" type="checkbox" id="switchCheckboxOn">
                     <label for="switchCheckboxOn" class="switch__label" >Получать спецпредложения</label>
                 </div>
-                <div>
-                    <h3>like button</h3>
-                    <input type="button" value="">
-                    <input type="button" value="">
-
+                ы<h3>like button</h3>
+                <div class="like">
+                    <a class="like__btn" href="#">
+                        2
+                    </a>
                 </div>
                 <div>
                     <h3>rate button</h3>
@@ -289,17 +289,42 @@
             <div>
                 <h3>pagination</h3>
                 <div class="pagination">
-                    <ul>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">...</a></li>
-                        <li><a href="#">15</a></li>
-                        <li><a href="#"><img src="img/arrow_forward-white.svg" alt="arrow"></a></li>
+                    <ul class="pagination__section">
+                        <li><a class="pageNumber active" href="#">1</a></li>
+                        <li><a class="pageNumber" href="#">2</a></li>
+                        <li><a class="pageNumber" href="#">3</a></li>
+                        <li><a class="pageNumber" href="#">...</a></li>
+                        <li><a class="pageNumber" href="#">15</a></li>
+                        <li><a class="pageNumber" href="#"><img src="img/arrow_forward-white.svg" alt="arrow"></a></li>
                     </ul>
+                    <p>1 – 12 из 100+ вариантов аренды</p>
                 </div>
-                <p>1 – 12 из 100+ вариантов аренды</p>
             </div>
+        </div>
+        <div class="richCheckbox">
+            <h3>rich Checkbox Buttons</h3>
+            <div class="checkbox">
+                <input class="checkbox-input" type="checkbox" name="" id="inputCheckbox-rich">
+                <label for="inputCheckbox-rich" class="checkbox-label">
+                    <h3>Широкий коридор</h3>
+                    <p>Ширина коридоров в номере не менее 91 см.</p>
+                </label>
+            </div>
+            <div class="checkbox">
+                <input class="checkbox-input" type="checkbox" name="" id="inputCheckbox-help">
+                <label for="inputCheckbox-help" class="checkbox-label">
+                    <h3>Помощник для инвалидов</h3>
+                    <p>На 1 этаже вас встретит специалист  и проводит до номера.</p>
+                </label>
+            </div>
+        </div>
+        <div class="bullet">
+            <ul class="bulletList">
+                <li>Нельзя с питомцами</li>
+                <li>Без вечеринок и мероприятий</li>
+                <li>Время прибытия — после 13:00,
+                    а выезд до 12:00</li>
+            </ul>
         </div>
 
         <!-- End button map -->
