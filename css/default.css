@@ -619,6 +619,60 @@ body {
   opacity: 1;
 }
 
+.switch {
+  position: relative;
+}
+
+.switch__label {
+  font: normal normal 14px/24px "Montserrat", sans-serif;
+  color: #8e8f9f;
+  padding-left: 0.625rem;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 1px;
+}
+
+.switch__input {
+  position: relative;
+  width: 2.5rem;
+  height: 1.25rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.switch__input:checked {
+  border: 1px solid #BC9CFF;
+}
+
+.switch__input:before {
+  content: " ";
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: #c7c7cf;
+  border-radius: 10px;
+  top: 3px;
+  left: 3px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.switch__input:checked:before {
+  left: 23px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
 .frame {
   margin-left: 300px;
 }
