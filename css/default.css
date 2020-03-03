@@ -1186,4 +1186,38 @@ body {
 .creative__social a {
   margin: 0 0.625rem;
 }
+
+.textList-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #f4f4f5;
+  width: 18.75rem;
+}
+
+.textList-box div {
+  margin: 1.25rem 0;
+}
+
+.textList-title {
+  margin-left: 0.625rem;
+}
+
+.textList-title h3,
+.textList-title p {
+  margin: 5px;
+  padding: 0;
+  width: 15rem;
+}
+
+.textList-title h3 {
+  line-height: 18px;
+  font-size: 14px;
+  color: #575871;
+}
+
+.textList-title p {
+  line-height: 14px;
+  font-size: 12px;
+}
 /*# sourceMappingURL=default.css.map */
