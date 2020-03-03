@@ -197,17 +197,17 @@ body {
     
     /* set default star color */
     .rating__icon--star {
-      color: orange;
+      color: $color-purple;
     }
   
     /* if any input is checked, make its following siblings grey */
     .rating__input:checked ~ .rating__label .rating__icon--star {
-      color: #ddd;
+      color: $color-light-grey;
     }
     
     /* make all stars orange on rating group hover */
     .rating-group:hover .rating__label .rating__icon--star {
-      color: orange;
+      color:  $color-purple;
     }
   
     /* make hovered input's following siblings grey on hover */
