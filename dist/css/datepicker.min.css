@@ -361,7 +361,6 @@
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    border-bottom: 1px solid #efefef;
     min-height: 32px;
     padding: 4px
 }
