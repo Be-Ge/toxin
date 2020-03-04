@@ -188,6 +188,7 @@
         /* make all stars orange on rating group hover */
         .rating-group:hover .rating__label .rating__icon--star {
             color: $color-purple;
+            background: url(f005);
         }
         /* make hovered input's following siblings grey on hover */
         .rating__input:hover~.rating__label .rating__icon--star {
