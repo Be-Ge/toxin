@@ -471,7 +471,6 @@ body {
     font: $btn;
     text-decoration: none;
     text-transform: uppercase;
-    width: rem(320px);
     text-align: center;
     position: relative;
     padding: 0.625rem 3rem;
@@ -811,14 +810,10 @@ body {
 
 // bullet list
 .bulletList {
-    list-style: none;
-    &li::before {
-        content: " ";
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background: $color-light-grey;
-        border-radius: 10px;
+    list-style-image: url(../img/Ellipse.svg);
+    li {
+        font: $body;
+        color: $color-blue;
     }
 }
 
@@ -947,7 +942,7 @@ body {
 }
 
 .selector .ui-slider-handle {
-    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    background: $color-green;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     top: -14px;
@@ -959,13 +954,14 @@ body {
 @media (min-width: 768px) {
     .selector .ui-slider-handle {
         top: -7px;
-        width: 16px;
-        height: 16px
+        width: 14px;
+        height: 14px
     }
 }
 
 .selector .ui-slider-range {
-    background-color: #d7d7d7
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 3px;
 }
 
 .selector .slider-price {
@@ -1002,7 +998,7 @@ body {
     top: 50%;
     left: 4px;
     margin-top: -1px;
-    color: #39c9a9;
+    color: $color-green;
     width: 10px;
     border-bottom: 1px solid
 }
@@ -1018,6 +1014,49 @@ body {
 
 .selector.open .show-all:after {
     display: none
+}
+
+// avatar
+.avatar {
+    display: flex;
+    justify-content: flex-start;
+    &List-title {
+        margin-top: 10px;
+        width: 50%;
+        margin-bottom: 20px;
+        p {
+            font: $body;
+            color: $color-blue;
+        }
+    }
+    &Like {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+// Cards section 
+.cards {
+    margin-left: rem(350px);
+}
+
+.room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 400px;
+    padding: 40px;
+    &Dropdown {
+        display: flex;
+        margin-bottom: 30px;
+    }
 }
 
 // Headers and footers section
@@ -1044,10 +1083,10 @@ body {
         color: $color-grey;
         display: flex;
         justify-content: space-around;
+        transition: all .3s;
     }
     &-item:hover {
         color: $color-default;
-        transition: all .3s;
     }
     &-item.active {
         font-weight: bold;
@@ -1062,10 +1101,10 @@ body {
         text-decoration: none;
         font-size: rem(12px);
         line-height: rem(15px);
+        transition: all .3s;
     }
     &-login:hover {
         opacity: 0.5;
-        transition: all .3s;
     }
     &-register {
         background: $gradient;

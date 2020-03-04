@@ -1,7 +1,7 @@
 $("#slider-range").slider({
     range: true,
-    min: 5000,
-    max: 10000,
+    min: 0,
+    max: 15000,
     step: 50,
     slide: function(event, ui) {
         $("#min-price").html(ui.values[0]);
@@ -10,7 +10,7 @@ $("#slider-range").slider({
 
         suffix = '';
         if (ui.values[1] == $("#max-price").data('max')) {
-            suffix = ' +';
+            suffix = '+';
         }
         $("#max-price").html(ui.values[1] + suffix);
     }
