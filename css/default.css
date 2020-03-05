@@ -354,12 +354,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 15px;
-  width: 320px;
-  height: 44px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 15px;
+  width: 320px;
+  height: 44px;
+  font: normal normal 14px/24px "Montserrat", sans-serif;
+  color: #575871;
 }
 
 .select-dropdown.active i {
@@ -400,10 +402,26 @@ body {
   font-size: 13px;
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .select-dropdown ul li:hover {
   background-color: #effbff;
+}
+
+.select-dropdown ul li label {
+  font: normal normal 14px/24px "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #1F2041;
+  text-transform: uppercase;
 }
 
 .input__mask {
@@ -443,6 +461,50 @@ body {
           box-sizing: border-box;
   border-radius: 4px;
   padding-left: 5px;
+}
+
+.doss-btn {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 22px;
+  background: transparent;
+  color: rgba(31, 32, 65, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.number-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.number-input input[type=number] {
+  border: 0;
+  width: 30px;
+  height: 15px;
+  padding-left: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1F2041;
 }
 
 .btn__map-color {
@@ -1256,11 +1318,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
 }
 
 .roomDropdown-input {
   margin-right: 20px;
+}
+
+.roomDropdown-link {
+  margin-top: 30px;
 }
 
 .register {

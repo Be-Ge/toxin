@@ -294,10 +294,12 @@ body {
         border-radius: 4px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 0 15px;
         width: 320px;
         height: 44px;
-        align-items: center;
+        font: $body;
+        color: $color-blue;
     }
     &.active {
         i {
@@ -332,8 +334,17 @@ body {
             padding: 10px 14px;
             font-size: 13px;
             transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             &:hover {
                 background-color: $hover;
+            }
+            label {
+                font: $body;
+                font-weight: bold;
+                color: $color-default;
+                text-transform: uppercase;
             }
         }
     }
@@ -373,6 +384,37 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     padding-left: 5px;
+}
+
+.doss-btn {
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 22px;
+    background: transparent;
+    color: rgba(31, 32, 65, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+.number-input {
+    display: flex;
+    align-items: center;
+    input[type=number] {
+        border: 0;
+        width: 30px;
+        height: 15px;
+        padding-left: 15px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #1F2041;
+    }
 }
 
 // buttons
@@ -1043,9 +1085,11 @@ body {
     margin-bottom: 40px;
     &Dropdown {
         display: flex;
-        margin-bottom: 30px; 
         &-input{
             margin-right: 20px;
+        }
+        &-link {
+            margin-top: 30px;
         }
     }
 }
