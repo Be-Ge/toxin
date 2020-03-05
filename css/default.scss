@@ -276,6 +276,8 @@ body {
     justify-content: flex-end;
 }
 
+
+
 // dropdown
 .select-dropdown {
     $highlight: #00aeef;
@@ -285,25 +287,19 @@ body {
     color: #53565a;
     background-color: white;
     border-radius: 4px;
-    * {
-        -webkit-touch-callout: none;
-        /* iOS Safari */
-        -webkit-user-select: none;
-        /* Safari */
-        -khtml-user-select: none;
-        /* Konqueror HTML */
-        -moz-user-select: none;
-        /* Firefox */
-        -ms-user-select: none;
-        /* Internet Explorer/Edge */
-        user-select: none;
+    &-title {
+        background: #FFFFFF;
+        border: 1px solid $color-light-grey;
+        box-sizing: border-box;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        width: 320px;
+        height: 44px;
+        align-items: center;
     }
     &.active {
-        input[type="text"] {
-            border-color: $highlight;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-        }
         i {
             top: 5px;
             transform: rotate(180deg);
@@ -312,22 +308,6 @@ body {
         ul {
             display: block;
         }
-    }
-    input[type="text"] {
-        position: relative;
-        z-index: 1;
-        color: #53565a;
-        border-radius: 4px;
-        border: 1px solid #c4d2e1;
-        outline: none !important;
-        padding: 10px 12px;
-        padding-right: 30px;
-        font-size: 13px;
-        text-overflow: ellipsis;
-        width: calc(100% - 44px); // parent width - (padding + border width)
-        background: transparent;
-        cursor: pointer;
-        user-select: none !important;
     }
     i {
         position: absolute;
@@ -368,7 +348,7 @@ body {
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
-    padding-left: 5px;
+    padding-left: 15px;
 }
 
 .input__drop {
@@ -423,7 +403,11 @@ body {
 .button-trans {
     border: rem(2px) solid;
     border-radius: rem(22px);
-    padding: rem(10px) rem(20px);
+    width: 99px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
     color: $color-purple;
     text-decoration: none;
@@ -466,14 +450,17 @@ body {
 .btn-link {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 1.375rem;
-    padding: 0.625rem 1.25rem;
     color: #f4f4f5;
     font: $btn;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     position: relative;
-    padding: 0.625rem 3rem;
+    width: 320px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all .3s;
     &:hover {
         opacity: 0.5;
@@ -1052,10 +1039,14 @@ body {
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     width: 400px;
-    padding: 40px;
+    padding: 40px 30px 30px 30px;
+    margin-bottom: 40px;
     &Dropdown {
         display: flex;
-        margin-bottom: 30px;
+        margin-bottom: 30px; 
+        &-input{
+            margin-right: 20px;
+        }
     }
 }
 .register {
@@ -1068,14 +1059,121 @@ body {
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     width: fit-content;
-    padding: 40px;
+    padding: rem(40px);
+    margin-bottom: rem(40px);
+    input {
+        margin-bottom: 10px;
+        
+    }
     &__radio {
         display: flex;
+    }
+    &__login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: rem(30px);
+            p{
+                font: $body;
+                color: $color-default;
+            }
+        }
+    }
+    &Male {
+        margin-right: rem(20px);
+    }
+}
+
+// login form
+.login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: fit-content;
+    padding: rem(40px);
+    margin-bottom: rem(40px);
+    input {
+        margin-bottom: 10px;
+        
+    }
+    &-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: rem(30px);
+        p{
+            font: $body;
+            color: $color-default;
+        }
+    }
+    &-link {
+        margin-top: 10px;
+    }
+}
+
+// items
+.items  {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+}
+#full-stars-item {
+    /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+    .rating-group {
+        display: inline-flex;
+    }
+    /* make hover effect work properly in IE */
+    .rating__icon {
+        pointer-events: none;
+    }
+    /* hide radio inputs */
+    .rating__input {
+        position: absolute !important;
+        left: -9999px !important;
+    }
+    /* hide 'none' input from screenreaders */
+    .rating__input--none {
+        display: none
+    }
+    /* set icon padding and size */
+    .rating__label {
+        cursor: pointer;
+        padding: 0 0.1em;
+        font-size: 2rem;
+    }
+    /* set default star color */
+    .rating__icon--star {
+        color: $color-purple;
+        font-weight: 900;
+    }
+    /* if any input is checked, make its following siblings grey */
+    .rating__input:checked~.rating__label .rating__icon--star {
+        color: $color-light-grey;
+        font-weight: 400;
+    }
+    /* make all stars orange on rating group hover */
+    .rating-group:hover .rating__label .rating__icon--star {
+        color: $color-purple;
+        font-weight: 900;
+    }
+    /* make hovered input's following siblings grey on hover */
+    .rating__input:hover~.rating__label .rating__icon--star {
+        color: #ddd;
+        font-weight: 400;
     }
 }
 // Headers and footers section
 .frame {
-    margin-left: 300px;
+    margin-left: rem(300px);
 }
 
 .standart__nav {

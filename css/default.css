@@ -342,23 +342,24 @@ body {
   border-radius: 4px;
 }
 
-.select-dropdown * {
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-}
-
-.select-dropdown.active input[type="text"] {
-  border-color: #00aeef;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+.select-dropdown-title {
+  background: #FFFFFF;
+  border: 1px solid #c7c7cf;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+  width: 320px;
+  height: 44px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .select-dropdown.active i {
@@ -370,26 +371,6 @@ body {
 
 .select-dropdown.active ul {
   display: block;
-}
-
-.select-dropdown input[type="text"] {
-  position: relative;
-  z-index: 1;
-  color: #53565a;
-  border-radius: 4px;
-  border: 1px solid #c4d2e1;
-  outline: none !important;
-  padding: 10px 12px;
-  padding-right: 30px;
-  font-size: 13px;
-  text-overflow: ellipsis;
-  width: calc(100% - 44px);
-  background: transparent;
-  cursor: pointer;
-  -webkit-user-select: none !important;
-     -moz-user-select: none !important;
-      -ms-user-select: none !important;
-          user-select: none !important;
 }
 
 .select-dropdown i {
@@ -435,7 +416,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  padding-left: 5px;
+  padding-left: 15px;
 }
 
 .input__drop {
@@ -503,7 +484,17 @@ body {
 .button-trans {
   border: 0.125rem solid;
   border-radius: 1.375rem;
-  padding: 0.625rem 1.25rem;
+  width: 99px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   color: #BC9CFF;
   text-decoration: none;
@@ -553,14 +544,23 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 1.375rem;
-  padding: 0.625rem 1.25rem;
   color: #f4f4f5;
   font: normal bold 12px/15px "Montserrat", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  padding: 0.625rem 3rem;
+  width: 320px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -1248,7 +1248,8 @@ body {
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   width: 400px;
-  padding: 40px;
+  padding: 40px 30px 30px 30px;
+  margin-bottom: 40px;
 }
 
 .roomDropdown {
@@ -1256,6 +1257,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
+}
+
+.roomDropdown-input {
+  margin-right: 20px;
 }
 
 .register {
@@ -1279,7 +1284,12 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 40px;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.register input {
+  margin-bottom: 10px;
 }
 
 .register__radio {
@@ -1288,8 +1298,158 @@ body {
   display: flex;
 }
 
+.register__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.register__login-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.875rem;
+}
+
+.register__login-btn p {
+  font: normal normal 14px/24px "Montserrat", sans-serif;
+  color: #1F2041;
+}
+
+.registerMale {
+  margin-right: 1.25rem;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.login input {
+  margin-bottom: 10px;
+}
+
+.login-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.875rem;
+}
+
+.login-btn p {
+  font: normal normal 14px/24px "Montserrat", sans-serif;
+  color: #1F2041;
+}
+
+.login-link {
+  margin-top: 10px;
+}
+
+.items {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+}
+
+#full-stars-item {
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  /* make hover effect work properly in IE */
+  /* hide radio inputs */
+  /* hide 'none' input from screenreaders */
+  /* set icon padding and size */
+  /* set default star color */
+  /* if any input is checked, make its following siblings grey */
+  /* make all stars orange on rating group hover */
+  /* make hovered input's following siblings grey on hover */
+}
+
+#full-stars-item .rating-group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#full-stars-item .rating__icon {
+  pointer-events: none;
+}
+
+#full-stars-item .rating__input {
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+#full-stars-item .rating__input--none {
+  display: none;
+}
+
+#full-stars-item .rating__label {
+  cursor: pointer;
+  padding: 0 0.1em;
+  font-size: 2rem;
+}
+
+#full-stars-item .rating__icon--star {
+  color: #BC9CFF;
+  font-weight: 900;
+}
+
+#full-stars-item .rating__input:checked ~ .rating__label .rating__icon--star {
+  color: #c7c7cf;
+  font-weight: 400;
+}
+
+#full-stars-item .rating-group:hover .rating__label .rating__icon--star {
+  color: #BC9CFF;
+  font-weight: 900;
+}
+
+#full-stars-item .rating__input:hover ~ .rating__label .rating__icon--star {
+  color: #ddd;
+  font-weight: 400;
+}
+
 .frame {
-  margin-left: 300px;
+  margin-left: 18.75rem;
 }
 
 .standart__nav {

@@ -91,6 +91,17 @@
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
 }
+.datepicker--cell.-range-from-:after {
+    content: " ";
+    display: inline-block;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.25;
+    position: absolute;
+    right: 0;
+    width: 15px;
+    height: 32px;
+    z-index: -1;
+}
 
 .datepicker--cell.-range-to- {
     font-family: Montserrat;
@@ -104,13 +115,26 @@
     color: #FFFFFF;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
-    `
+    position: relative;
+    
+}
+.datepicker--cell.-range-to-:before {
+    content: " ";
+    display: inline-block;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.25;
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 32px;
+    z-index: -1;
+
 }
 
 .datepicker--cell.-selected-,
 .datepicker--cell.-selected-.-current- {
     color: #fff;
-    background: #BC9CFF
+
 }
 
 .datepicker--cell.-range-from-.-range-to- {

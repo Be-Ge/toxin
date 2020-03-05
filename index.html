@@ -141,9 +141,11 @@
                     <div class="input__text">
                         <h3>Dropdown</h3>
                         <p class="input__paragraph">Default</p>
+                    </div>
+                        <div class="select-dropdown-title">Сколько гостей
+                            <span><img src="img/expand_more.svg" alt="more"></span>
+                        </div>
                         <div class="select-dropdown">
-                            <input type="text" placeholder="Сколько гостей" />
-
                             <ul>
                                 <li>
                                     <label for="">спальни</label>
@@ -174,7 +176,6 @@
                                 <li>Never</li>
                             </ul>
                         </div>
-                    </div>
                 </div>
                 <div class="input__box">
                     <div class="input__text">
@@ -197,7 +198,7 @@
                 </div>
                 <div>
                     <h3>filter date dropdown</h3>
-                    <input id='dropdownIcon' type="text" data-range="true" data-multiple-dates-separator="&#8211;" data-language="ru" class="datepicker-here input__date" placeholder="ДД.ММ.ГГГГ&#8211;&#8230;" />
+                    <input id='dropdownIcon' type="text"  data-range="true" data-multiple-dates-separator="&#8211;" data-language="ru" class="datepicker-here input__date" placeholder="ДД.ММ.ГГГГ&#8211;&#8230;" />
                 </div>
                 <h3>subscription text field</h3>
                 <div class="input__box">
@@ -414,55 +415,100 @@
     <!-- Cards section -->
     <section class="cards">
         <div class="room">
-            <h2>Найдём номера под ваши пожелания</h2>
+            <h1>Найдём номера под ваши пожелания</h1>
             <div class="roomDropdown">
                 <div>
                     <h3>прибытие</h3>
-                    <input id='dropdownIcon' type='text' class='datepicker-here input__drop' placeholder="ДД.ММ.ГГГГ" />
+                    <input id='dropdownIcon' type='text' class='datepicker-here input__drop roomDropdown-input' placeholder="ДД.ММ.ГГГГ" />
                 </div>
                 <div>
                     <h3>выезд</h3>
                     <input id='dropdownIcon' type='text' class='datepicker-here input__drop' placeholder="ДД.ММ.ГГГГ" />
                 </div>
-            </div>
+                
+            </div>  
+            <h3>гости</h3>
             <a class="btn-link">
                 Перейти к оплате
             </a>
         </div>
         <div class="register">
-            <h2>Регистрация аккаунта</h2>
-            <input class="input__email" type="email" placeholder="Имя">
-            <input class="input__email" type="email" placeholder="Фамилия">
+            <h1>Регистрация аккаунта</h1>
+            <input class="input__email " type="email" placeholder="Имя">
+            <input class="input__email " type="email" placeholder="Фамилия">
             <div class="register__radio">
-                <div class="radio">
-                    <input class="radio__input" type="radio" name="male" id="inputRadio-man">
-                    <label class="radio__label" for="inputRadio-man">Мужчина</label>
+                <div class="radio registerMale">
+                    <input class="radio__input" type="radio" name="male" id="registerMale-man">
+                    <label class="radio__label" for="registerMale-man">Мужчина</label>
                 </div>
                 <div class="radio">
-                    <input class="radio__input" type="radio" name="male" id="inputRadio-woman">
-                    <label class="radio__label" for="inputRadio-woman">Женщина</label>
+                    <input class="radio__input " type="radio" name="male" id="registerMale-woman">
+                    <label class="radio__label" for="registerMale-woman">Женщина</label>
                 </div>
             </div>
             <div>
                 <h3>дата рождения</h3>
                 <input type='text' class='datepicker-here input__mask' placeholder="ДД.ММ.ГГГГ" />
             </div>
-            <div>
+            <div class="register__login">
                 <h3>данные для входа в сервис</h3>
                 <input class="input__email" type="email" placeholder="Email">
                 <input class="input__email" type="email" placeholder="Пароль">
                 <div class="switch">
-                    <input class="switch__input" type="checkbox" id="switchCheckbox">
-                    <label for="switchCheckbox" class="switch__label">Получать спецпредложения</label>
+                    <input class="switch__input" type="checkbox" id="registerSwich">
+                    <label for="registerSwich" class="switch__label">Получать спецпредложения</label>
                 </div>
                 <a class="btn-link">
                     Перейти к оплате
                 </a>
-                <div>
+                <div class="register__login-btn"> 
                     <p>Уже есть аккаунт на Toxin</p>
                     <a class="button-trans">войти</a>
                 </div>
             </div>
+        </div>
+        <div class="login">
+            <h1>Войти</h1>
+            <input class="input__email " type="email" placeholder="Имя">
+            <input class="input__email " type="email" placeholder="Фамилия">
+            <a class="btn-link login-link">войти</a>
+            <div class="login-btn"> 
+                <p>Нет аккаунта на Toxin?</p>
+                <a class="button-trans">создать</a>
+            </div>
+        </div>
+        <div class="items">
+            <div class="items__carousel">
+                <div><img src="img/luxury.png" alt="interior"></div>
+                <div><img src="img/luxury.png" alt="interior"></div>
+                <div><img src="img/luxury.png" alt="interior"></div>
+              </div>
+              <div>
+                  <div>	&#8470; 888</div>
+                  <div>люкс</div>
+                  <div> <span>9 990₽</span>в сутки</div>
+              </div>
+              <div>
+                <div id="full-stars-item">
+                    <div class="rating-group">
+                        <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating1-none" value="0" type="radio">
+                        <label aria-label="1 star" class="rating__label" for="rating1-1"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                        <input class="rating__input" name="rating3" id="rating1-1" value="1" type="radio">
+                        <label aria-label="2 stars" class="rating__label" for="rating1-2"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                        <input class="rating__input" name="rating3" id="rating1-2" value="2" type="radio">
+                        <label aria-label="3 stars" class="rating__label" for="rating1-3"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                        <input class="rating__input" name="rating3" id="rating1-3" value="3" type="radio">
+                        <label aria-label="4 stars" class="rating__label" for="rating1-4"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                        <input class="rating__input" name="rating3" id="rating1-4" value="4" type="radio">
+                        <label aria-label="5 stars" class="rating__label" for="rating1-5"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                        <input class="rating__input" name="rating3" id="rating1-5" value="5" type="radio">
+                    </div>
+                </div>
+                <div>
+                   <span>145</span>Отзывов
+                </div>
+              </div>
+
         </div>
     </section>
     <!-- End cards section  -->
