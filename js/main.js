@@ -15,3 +15,16 @@ $("#slider-range").slider({
         $("#max-price").html(ui.values[1] + suffix);
     }
 })
+// $(document).ready(function(){
+//     $('.items__carousel').slick({
+//       setting-name: setting-value
+//     });
+//   });
+
+// $('.item__carousel').slick();
+
+$(this).next('.select-dropdown').find('ul').toggle()
+
+$('.select-dropdown-title').on('click', function() {
+    $(this).next('.select-dropdown').find('ul').toggle()
+})
