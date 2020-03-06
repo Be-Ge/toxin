@@ -15,13 +15,8 @@ $("#slider-range").slider({
         $("#max-price").html(ui.values[1] + suffix);
     }
 })
-// $(document).ready(function(){
-//     $('.items__carousel').slick({
-//       setting-name: setting-value
-//     });
-//   });
 
-// $('.item__carousel').slick();
+$('.items').slick();
 
 $(this).next('.select-dropdown').find('ul').toggle()
 
