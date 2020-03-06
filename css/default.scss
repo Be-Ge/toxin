@@ -773,18 +773,16 @@ body {
         }
     }
 }
-svg.like-svg path {
-    fill: $color-grey;
-}
+
 .like__input:checked+.like__label:after {
     opacity: 1;
 }
 .like__input:checked+ .like__label span {
     color: $color-purple;
 }
-.like__input:checked+ svg.like-svg path {
+.like__input:checked + label svg path {
     fill: $color-purple;
-
+    fill-opacity: 1;
 }
 // pagination
 .pagination {

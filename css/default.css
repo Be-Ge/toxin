@@ -946,10 +946,6 @@ body {
   transition: all .3s;
 }
 
-svg.like-svg path {
-  fill: #8e8f9f;
-}
-
 .like__input:checked + .like__label:after {
   opacity: 1;
 }
@@ -958,8 +954,9 @@ svg.like-svg path {
   color: #BC9CFF;
 }
 
-.like__input:checked + svg.like-svg path {
+.like__input:checked + label svg path {
   fill: #BC9CFF;
+  fill-opacity: 1;
 }
 
 .pagination {
