@@ -31,3 +31,24 @@ $(this).next('.select-dropdown').find('ul').toggle()
 $('.select-dropdown-title').on('click', function() {
     $(this).next('.select-dropdown').find('ul').toggle()
 })
+
+$(function(){
+
+    $('input[type="number"]').niceNumber();
+  
+  });
+  $('input[type="number"]').niceNumber({
+
+    // auto resize the number input
+    autoSize: true,
+  
+    // the number of extra character
+    autoSizeBuffer: 1,
+  
+    // custom button text
+    buttonDecrement: '-',
+    buttonIncrement: "+",
+  
+    buttonPosition: 'around'
+    
+  });
