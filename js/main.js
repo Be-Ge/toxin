@@ -16,7 +16,15 @@ $("#slider-range").slider({
     }
 })
 
-$('.items').slick();
+$('.items__carousel').slick({
+    dots: true,
+    aroows: true
+
+});
+
+$('.items__room-carousel').slick({
+    dots: true,
+});
 
 $(this).next('.select-dropdown').find('ul').toggle()
 

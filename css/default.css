@@ -414,7 +414,7 @@ body {
 }
 
 .select-dropdown ul li:hover {
-  background-color: #effbff;
+  background-color: #f4f4f5;
 }
 
 .select-dropdown ul li label {
@@ -496,7 +496,6 @@ body {
   border: 0;
   width: 30px;
   height: 15px;
-  padding-left: 15px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -505,6 +504,16 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #1F2041;
+  background: transparent;
+}
+
+.number-input input::-webkit-inner-spin-button,
+.number-input input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .btn__map-color {
@@ -1454,6 +1463,75 @@ body {
   -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
           box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
+  width: 16.875rem;
+  margin-bottom: 40px;
+}
+
+.items__count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #8e8f9f;
+  width: 230px;
+  margin: 0 20px;
+}
+
+.items__count p {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1F2041;
+}
+
+.items__count-span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  font-weight: bold;
+}
+
+.items__price {
+  font: normal normal 14px/24px "Montserrat", sans-serif;
+  color: #8e8f9f;
+}
+
+.items__price span {
+  font-weight: bold;
+}
+
+.items__range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 20px;
+  padding-bottom: 20px;
+}
+
+.items__comments {
+  font: normal normal 14px/24px "Montserrat", sans-serif;
+  color: #8e8f9f;
+}
+
+.items__comments span {
+  font-weight: bold;
 }
 
 #full-stars-item {
@@ -1489,8 +1567,7 @@ body {
 
 #full-stars-item .rating__label {
   cursor: pointer;
-  padding: 0 0.1em;
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 #full-stars-item .rating__icon--star {
@@ -1509,6 +1586,127 @@ body {
 }
 
 #full-stars-item .rating__input:hover ~ .rating__label .rating__icon--star {
+  color: #ddd;
+  font-weight: 400;
+}
+
+.items__room {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  width: 16.875rem;
+  margin-bottom: 40px;
+}
+
+.items__room-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #8e8f9f;
+  width: 230px;
+  margin: 0 20px;
+}
+
+.items__room-count p {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1F2041;
+}
+
+.items__room-price {
+  font: normal normal 14px/24px "Montserrat", sans-serif;
+  color: #8e8f9f;
+}
+
+.items__room-price span {
+  font-weight: bold;
+}
+
+.items__room-range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 20px;
+  padding-bottom: 20px;
+}
+
+.items__room-comments {
+  font: normal normal 14px/24px "Montserrat", sans-serif;
+  color: #8e8f9f;
+}
+
+.items__room-comments span {
+  font-weight: bold;
+}
+
+#full-stars-item-room {
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  /* make hover effect work properly in IE */
+  /* hide radio inputs */
+  /* hide 'none' input from screenreaders */
+  /* set icon padding and size */
+  /* set default star color */
+  /* if any input is checked, make its following siblings grey */
+  /* make all stars orange on rating group hover */
+  /* make hovered input's following siblings grey on hover */
+}
+
+#full-stars-item-room .rating-group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#full-stars-item-room .rating__icon {
+  pointer-events: none;
+}
+
+#full-stars-item-room .rating__input {
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+#full-stars-item-room .rating__input--none {
+  display: none;
+}
+
+#full-stars-item-room .rating__label {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#full-stars-item-room .rating__icon--star {
+  color: #BC9CFF;
+  font-weight: 900;
+}
+
+#full-stars-item-room .rating__input:checked ~ .rating__label .rating__icon--star {
+  color: #c7c7cf;
+  font-weight: 400;
+}
+
+#full-stars-item-room .rating-group:hover .rating__label .rating__icon--star {
+  color: #BC9CFF;
+  font-weight: 900;
+}
+
+#full-stars-item-room .rating__input:hover ~ .rating__label .rating__icon--star {
   color: #ddd;
   font-weight: 400;
 }
