@@ -759,6 +759,7 @@ body {
             left: 0;
             z-index: 2;
             opacity: 0;
+            transition: all .3s;
         }
         span {
             font-family: Montserrat;
@@ -768,15 +769,21 @@ body {
             line-height: 12px;
             text-align: center;
             color: $color-light-grey;
+            transition: all .3s;
         }
     }
 }
 
 .like__input:checked+.like__label:after {
     opacity: 1;
-    transition: all .3s;
 }
+.like__input:checked+ .like__label span {
+    color: $color-purple;
+}
+.like__input:checked+ .like-svg path {
+    fill: $color-purple;
 
+}
 // pagination
 .pagination {
     width: rem(250px);

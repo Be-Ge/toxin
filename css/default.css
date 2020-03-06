@@ -930,6 +930,8 @@ body {
   left: 0;
   z-index: 2;
   opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .like__label span {
@@ -940,12 +942,20 @@ body {
   line-height: 12px;
   text-align: center;
   color: #c7c7cf;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .like__input:checked + .like__label:after {
   opacity: 1;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+}
+
+.like__input:checked + .like__label span {
+  color: #BC9CFF;
+}
+
+.like__input:checked + .like-svg path {
+  fill: #BC9CFF;
 }
 
 .pagination {
