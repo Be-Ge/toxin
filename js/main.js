@@ -26,11 +26,23 @@ $('.items__room-carousel').slick({
     dots: true,
 });
 
+// dropdown
+
 $(this).next('.select-dropdown').find('ul').toggle()
 
 $('.select-dropdown-title').on('click', function() {
     $(this).next('.select-dropdown').find('ul').toggle()
 })
+$(this).parents('.input__box').toggleClass('opened')
+
+$("body").on("mouseup touchstart", function(event) {
+    if (
+        !$('.select-dropdown-title').is(event.target) &&
+        $('.select-dropdown > ul').has(event.target).length === 0
+    ) {
+        $('.select-dropdown > ul').hide().parents('.input__box').removeClass('opened')
+    }
+});
 
 $(function(){
 
