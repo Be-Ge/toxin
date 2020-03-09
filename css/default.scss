@@ -416,6 +416,25 @@ body {
     }
 }
 
+// expandable checkbox list
+.checkbox__list {
+    &-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 266px;
+    }
+    &-select ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
 // buttons
 .btn__map-color {
     display: flex;
