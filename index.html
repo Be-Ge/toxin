@@ -15,24 +15,160 @@
     <link rel="apple-touch-icon" href="img/favic.png" sizes="72x72">
     <script src="https://kit.fontawesome.com/d4ec5840f6.js" crossorigin="anonymous"></script>
     <link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    <header class="standart__nav">
+    <header class="standart__nav container">
         <a href="#" class="full-logo">
             <img src="img/full-logo.svg" alt="full logo">
         </a>
         <ul class="standart__nav-menu">
-            <li><a class="standart__nav-item active" href="#">Home </a></li>
-            <li><a class="standart__nav-item" href="#">About Us </a></li>
-            <li><a class="standart__nav-item" href="#">Services </a></li>
-            <li><a class="standart__nav-item" href="#">Careers </a></li>
-            <li><a class="standart__nav-item" href="#">News </a></li>
-            <li><a class="standart__nav-item" href="#">Documentation </a></li>
-            <li><a class="standart__nav-login" href="#">Login</a></li>
-            <li><a class="standart__nav-register" href="#">REGISTER</a></li>
+            <li><a class="standart__nav-item" href="#">О нас </a></li>
+            <li><a class="standart__nav-item" href="#">Услуги </a></li>
+            <li><a class="standart__nav-item" href="#">Вакансии </a></li>
+            <li><a class="standart__nav-item" href="#">Новости </a></li>
+            <li><a class="standart__nav-item" href="#">Соглашения </a></li>
+            <li><a class="standart__nav-login" href="#">войти</a></li>
+            <li><a class="standart__nav-register" href="#">зарегистрироваться</a></li>
         </ul>
     </header>
+    <section class="bg__main">
+        <div class="bg__main-box container">
+            <div class="room bg__main-room">
+                <h1>Найдём номера под ваши пожелания</h1>
+                <div class="roomDropdown">
+                    <div>
+                        <h3>прибытие</h3>
+                        <input id='dropdownIcon' type='text' class='datepicker-here input__drop roomDropdown-input' placeholder="ДД.ММ.ГГГГ" />
+                    </div>
+                    <div>
+                        <h3>выезд</h3>
+                        <input id='dropdownIcon' type='text' class='datepicker-here input__drop' placeholder="ДД.ММ.ГГГГ" />
+                    </div>
+                    
+                </div>  
+                <div class="input__box">
+                    <H3>Гости</H3>
+                        <div class="select-dropdown-title">Сколько гостей
+                            <span><img src="img/expand_more.svg" alt="more"></span>
+                        </div>
+                        <div class="select-dropdown">
+                            <ul>
+                                <li>
+                                    <label for="">спальни</label>
+
+                                    <div class="number-input">
+                                        
+                                        <input type="number" min="0" class="js-input" value="0" />
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="">кровати</label>
+
+                                    <div class="number-input">
+                            
+                                        <input type="number" min="0" class="js-input" value="0" />
+                                        
+                                    </div>
+                                </li>
+                                <li> <label for="">ванные комнаты</label>
+
+                                    <div class="number-input">
+                            
+                                        <input type="number" min="0" class="js-input" value="0" />
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-dropdown-button">
+                                    <button type="button" class="dropdown-cancel button-grey">Очистить</button>
+                                    <button type="button"class="dropdown-apply button-color">ПРИМЕНИТЬ</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                <a class="btn-link roomDropdown-link">
+                    подобрать номер
+                </a>
+            </div>
+            <p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+        </div>
+        
+    </section>
+    <footer class="widgets">
+        <div class="container">
+        <div class="widgets__nav">
+            <div class="widgets__nav-logo">
+                <a href="#">
+                    <img src="img/full-logo.svg" alt="full logo">
+                </a>
+                <p class="footer-text">
+                    Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+            </div>
+            <div>
+                <ul class="widgets__nav-items">
+                    <li>
+                        <h3>навигация</h3>
+                    </li>
+                    <li><a class="widgets__nav-item" href="#">О нас</a></li>
+                    <li><a class="widgets__nav-item" href="#">Новости</a></li>
+                    <li><a class="widgets__nav-item" href="#">Служба поддержки</a></li>
+                    <li><a class="widgets__nav-item" href="#">Услуги</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="widgets__nav-items">
+                    <li>
+                        <h3>о нас</h3>
+                    </li>
+                    <li><a class="widgets__nav-item" href="#">О сервисе</a></li>
+                    <li><a class="widgets__nav-item" href="#">Наша команда</a></li>
+                    <li><a class="widgets__nav-item" href="#">Вакансии</a></li>
+                    <li><a class="widgets__nav-item" href="#">Инвесторы</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="widgets__nav-items">
+                    <li>
+                        <h3>Служба поддержки</h3>
+                    </li>
+                    <li><a class="widgets__nav-item" href="#">Соглашения</a></li>
+                    <li><a class="widgets__nav-item" href="#">Сообщества</a></li>
+                    <li><a class="widgets__nav-item" href="#">Связь с нами</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Подписка</h3>
+                <p class="footer-text">Получайте специальные предложения и новости сервиса</p>
+                <div class="input__box">
+                    <input class="input__email" type="email" placeholder="Your email address ">
+                    <label class="label__email-link" for="">
+                        <a  class="label__email-arrow" href="#">
+                            <img src="img/arrow_forward.svg" alt="arrow">
+                        </a>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="widgets__social">
+            <div class="widgets__social-copy">Copyright © 2018 Toxin отель. Все права зачищены.</div>
+            <div class="widgets__social-link">
+                <a href="#"><img src="img/twitter.svg" alt="social logo"></a>
+                <a href="#"><img src="img/fb.svg" alt="social logo"></a>
+                <a href="#"><img src="img/insta.svg" alt="social logo"></a>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/jquery.nice-number.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="dist/js/datepicker.min.js"></script>
+    <script src="dist/js/i18n/datepicker.en.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

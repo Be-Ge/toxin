@@ -64,3 +64,32 @@ $(function(){
     buttonPosition: 'around'
     
   });
+
+  // number handler
+function numberHandler (e) {
+    var box = $(this).parents('.input__box')
+    var value = +e.currentTarget.value
+  
+    if (!box.is('.touched') && value > 0) {
+       box.addClass('touched');
+       box.find('.select-dropdown-button').show()
+    }
+  }
+  
+  $('.input__box').on('input', '.js-input', numberHandler)
+  $('.input__box').on('click', '.select-dropdown-button > button', function (e) {
+      e.preventDefault()
+      if ($(this).is('.dropdown-cancel')) {
+          var box = $(this).parents('.input__box')
+          box.find('.js-input').each(function(index, input) {
+              input.value = 0
+          });
+          box.removeClass('touched');
+          box.find('.select-dropdown-button').hide()
+      }
+  })
+  // END: number handler
+  
+  
+  /*@TODO remove*/
+  $('.select-dropdown-button').hide()

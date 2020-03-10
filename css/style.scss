@@ -1,0 +1,41 @@
+@import 'default';
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0  140px;
+}
+
+.bg__main {
+    background: url(../img/main-lp.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: calc(100vh - 70px);
+    &-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        p {
+            display: flex;
+            align-items: flex-end;
+            width: 300px;
+            text-align: end;
+            color: $color-blue;
+        }
+    }
+    &-room {
+        margin-top: 70px;
+        height: 400px;;
+    }
+
+}
+
+.select-dropdown-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

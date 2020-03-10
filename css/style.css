@@ -1993,10 +1993,6 @@ p {
   color: #575871;
 }
 
-.widgets__social-link a {
-  margin-right: 20px;
-}
-
 .footer-text {
   font: normal normal 14px/24px "Montserrat", sans-serif;
   color: #575871;
@@ -2068,4 +2064,60 @@ p {
   line-height: 14px;
   font-size: 12px;
 }
-/*# sourceMappingURL=default.css.map */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0  140px;
+}
+
+.bg__main {
+  background: url(../img/main-lp.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh - 70px);
+}
+
+.bg__main-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bg__main-box p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 300px;
+  text-align: end;
+  color: #575871;
+}
+
+.bg__main-room {
+  margin-top: 70px;
+  height: 400px;
+}
+
+.select-dropdown-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
