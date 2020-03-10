@@ -3,6 +3,73 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
+.colors {
+  display: inline-block;
+  position: absolute;
+  width: 269.26px;
+  height: 610px;
+  left: 149.74px;
+  top: 145px;
+}
+.square {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+
+.colors-name {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #1F2041;
+  margin: 0;
+}
+
+
+.type-style {
+  display: inline-block;
+}
+
+.colors-rgba {
+  font-family: Quicksand;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #1F2041;
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+}
+
+h2 {
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041;
+}
+
+.main-text {
+  font-size: 14px;
+  color: #575871;
+}
+
+h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
