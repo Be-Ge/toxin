@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toxin</title>
+    <title>Sign in</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Quicksand:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/jquery-ui-git.css">
     <link href="css/jquery.nice-number.css" rel="stylesheet">
@@ -16,7 +16,6 @@
     <script src="https://kit.fontawesome.com/d4ec5840f6.js" crossorigin="anonymous"></script>
     <link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
     <header class="standart__nav container">
@@ -33,70 +32,19 @@
             <li><a class="standart__nav-register" href="registration.html">зарегистрироваться</a></li>
         </ul>
     </header>
-    <section class="bg__main">
-        <div class="bg__main-box container">
-            <div class="room bg__main-room">
-                <h1>Найдём номера под ваши пожелания</h1>
-                <div class="roomDropdown">
-                    <div>
-                        <h3>прибытие</h3>
-                        <input id='dropdownIcon' type='text' class='datepicker-here input__drop roomDropdown-input' placeholder="ДД.ММ.ГГГГ" />
-                    </div>
-                    <div>
-                        <h3>выезд</h3>
-                        <input id='dropdownIcon' type='text' class='datepicker-here input__drop' placeholder="ДД.ММ.ГГГГ" />
-                    </div>
-                    
-                </div>  
-                <div class="input__box">
-                    <H3>Гости</H3>
-                        <div class="select-dropdown-title">Сколько гостей
-                            <span><img src="img/expand_more.svg" alt="more"></span>
-                        </div>
-                        <div class="select-dropdown">
-                            <ul>
-                                <li>
-                                    <label for="">спальни</label>
-
-                                    <div class="number-input">
-                                        
-                                        <input type="number" min="0" class="js-input" value="0" />
-                                        
-                                    </div>
-                                </li>
-                                <li>
-                                    <label for="">кровати</label>
-
-                                    <div class="number-input">
-                            
-                                        <input type="number" min="0" class="js-input" value="0" />
-                                        
-                                    </div>
-                                </li>
-                                <li> <label for="">ванные комнаты</label>
-
-                                    <div class="number-input">
-                            
-                                        <input type="number" min="0" class="js-input" value="0" />
-                                        
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-dropdown-button">
-                                    <button type="button" class="dropdown-cancel button-grey">Очистить</button>
-                                    <button type="button"class="dropdown-apply button-color">ПРИМЕНИТЬ</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+    <section class="bg__registration">
+        <div class="container">
+            <div class="login">
+                <h1>Войти</h1>
+                <input class="input__email " type="email" placeholder="Имя">
+                <input class="input__email " type="email" placeholder="Фамилия">
+                <a class="btn-link login-link">войти</a>
+                <div class="login-btn"> 
+                    <p>Нет аккаунта на Toxin?</p>
+                    <a class="button-trans">создать</a>
                 </div>
-                <a class="btn-link roomDropdown-link">
-                    подобрать номер
-                </a>
             </div>
-            <p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
-        </div>
-        
+        </div>     
     </section>
     <footer class="widgets">
         <div class="container">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toxin</title>
+    <title>Registration</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Quicksand:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/jquery-ui-git.css">
     <link href="css/jquery.nice-number.css" rel="stylesheet">
@@ -15,8 +15,7 @@
     <link rel="apple-touch-icon" href="img/favic.png" sizes="72x72">
     <script src="https://kit.fontawesome.com/d4ec5840f6.js" crossorigin="anonymous"></script>
     <link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/registration.css">
 </head>
 <body>
     <header class="standart__nav container">
@@ -33,70 +32,44 @@
             <li><a class="standart__nav-register" href="registration.html">зарегистрироваться</a></li>
         </ul>
     </header>
-    <section class="bg__main">
-        <div class="bg__main-box container">
-            <div class="room bg__main-room">
-                <h1>Найдём номера под ваши пожелания</h1>
-                <div class="roomDropdown">
-                    <div>
-                        <h3>прибытие</h3>
-                        <input id='dropdownIcon' type='text' class='datepicker-here input__drop roomDropdown-input' placeholder="ДД.ММ.ГГГГ" />
+    <section class="bg__registration">
+        <div class="container">
+            <div class="register ">
+                <h1>Регистрация аккаунта</h1>
+                <input class="input__email " type="email" placeholder="Имя">
+                <input class="input__email " type="email" placeholder="Фамилия">
+                <div class="register__radio">
+                    <div class="radio registerMale">
+                        <input class="radio__input" type="radio" name="male" id="registerMale-man">
+                        <label class="radio__label" for="registerMale-man">Мужчина</label>
                     </div>
-                    <div>
-                        <h3>выезд</h3>
-                        <input id='dropdownIcon' type='text' class='datepicker-here input__drop' placeholder="ДД.ММ.ГГГГ" />
+                    <div class="radio">
+                        <input class="radio__input " type="radio" name="male" id="registerMale-woman">
+                        <label class="radio__label" for="registerMale-woman">Женщина</label>
                     </div>
-                    
-                </div>  
-                <div class="input__box">
-                    <H3>Гости</H3>
-                        <div class="select-dropdown-title">Сколько гостей
-                            <span><img src="img/expand_more.svg" alt="more"></span>
-                        </div>
-                        <div class="select-dropdown">
-                            <ul>
-                                <li>
-                                    <label for="">спальни</label>
-
-                                    <div class="number-input">
-                                        
-                                        <input type="number" min="0" class="js-input" value="0" />
-                                        
-                                    </div>
-                                </li>
-                                <li>
-                                    <label for="">кровати</label>
-
-                                    <div class="number-input">
-                            
-                                        <input type="number" min="0" class="js-input" value="0" />
-                                        
-                                    </div>
-                                </li>
-                                <li> <label for="">ванные комнаты</label>
-
-                                    <div class="number-input">
-                            
-                                        <input type="number" min="0" class="js-input" value="0" />
-                                        
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-dropdown-button">
-                                    <button type="button" class="dropdown-cancel button-grey">Очистить</button>
-                                    <button type="button"class="dropdown-apply button-color">ПРИМЕНИТЬ</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
                 </div>
-                <a class="btn-link roomDropdown-link">
-                    подобрать номер
-                </a>
+                <div>
+                    <h3>дата рождения</h3>
+                    <input type='text' class='datepicker-here input__mask' placeholder="ДД.ММ.ГГГГ" />
+                </div>
+                <div class="register__login">
+                    <h3>данные для входа в сервис</h3>
+                    <input class="input__email" type="email" placeholder="Email">
+                    <input class="input__email" type="email" placeholder="Пароль">
+                    <div class="switch">
+                        <input class="switch__input" type="checkbox" id="registerSwich">
+                        <label for="registerSwich" class="switch__label">Получать спецпредложения</label>
+                    </div>
+                    <a class="btn-link">
+                        Перейти к оплате
+                    </a>
+                    <div class="register__login-btn"> 
+                        <p>Уже есть аккаунт на Toxin</p>
+                        <a class="button-trans">войти</a>
+                    </div>
+                </div>
             </div>
-            <p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
-        </div>
-        
+        </div>     
     </section>
     <footer class="widgets">
         <div class="container">
@@ -170,5 +143,6 @@
     <script src="dist/js/datepicker.min.js"></script>
     <script src="dist/js/i18n/datepicker.en.js"></script>
     <script src="js/main.js"></script>
+    
 </body>
 </html>

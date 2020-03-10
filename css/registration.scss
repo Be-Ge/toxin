@@ -1,0 +1,11 @@
+@import "default";
+
+// registration
+
+.bg__registration {
+    background: url(../img/sign-in.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 70px);
+
+}
