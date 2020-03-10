@@ -2072,4 +2072,8 @@ p {
   line-height: 14px;
   font-size: 12px;
 }
-/*# sourceMappingURL=default.css.map */
+
+.menu__filter {
+  width: 300px;
+}
+/*# sourceMappingURL=rooms.css.map */

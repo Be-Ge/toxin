@@ -18,8 +18,7 @@ $("#slider-range").slider({
 
 $('.items__carousel').slick({
     dots: true,
-    aroows: true
-
+    arrows: true
 });
 
 $('.items__room-carousel').slick({

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toxin</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Quicksand:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui-git.css">
+    <link href="css/jquery.nice-number.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="shortcut icon" href="img/favic.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favic.png" sizes="50x50">
+    <link rel="apple-touch-icon" href="img/favic.png" sizes="72x72">
+    <script src="https://kit.fontawesome.com/d4ec5840f6.js" crossorigin="anonymous"></script>
+    <link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/rooms.css">
+</head>
+<body>
+    <header class="standart__nav container">
+        <a href="#" class="full-logo">
+            <img src="img/full-logo.svg" alt="full logo">
+        </a>
+        <ul class="standart__nav-menu">
+            <li><a class="standart__nav-item" href="#">О нас </a></li>
+            <li><a class="standart__nav-item" href="#">Услуги </a></li>
+            <li><a class="standart__nav-item" href="#">Вакансии </a></li>
+            <li><a class="standart__nav-item" href="#">Новости </a></li>
+            <li><a class="standart__nav-item" href="#">Соглашения </a></li>
+            <li><a class="standart__nav-login" href="#">войти</a></li>
+            <li><a class="standart__nav-register" href="#">зарегистрироваться</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="container">
+            <aside class="menu__filter">
+                <div>
+                    <h3>даты пребывания в отеле</h3>
+                    <input id='dropdownIcon' type='text' class='datepicker-here input__drop' placeholder="ДД.ММ.ГГГГ" />
+
+                </div>
+                <div class="input__box">
+                    <div class="input__text">
+                        <h3>гости</h3>
+                    </div>
+                        <div class="select-dropdown-title">Сколько гостей
+                            <span><img src="img/expand_more.svg" alt="more"></span>
+                        </div>
+                        <div class="select-dropdown">
+                            <ul>
+                                <li>
+                                    <label for="">спальни</label>
+
+                                    <div class="number-input">
+                                        
+                                        <input type="number" min="0" class="js-input" value="0" />
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="">кровати</label>
+
+                                    <div class="number-input">
+                            
+                                        <input type="number" min="0" class="js-input" value="0" />
+                                        
+                                    </div>
+                                </li>
+                                <li> <label for="">ванные комнаты</label>
+
+                                    <div class="number-input">
+                            
+                                        <input type="number" min="0" class="js-input" value="0" />
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-dropdown-button">
+                                    <button type="button" class="dropdown-cancel">Очистить</button>
+                                    <button type="button"class="dropdown-apply">ПРИМЕНИТЬ</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="range">
+                    <div class="selector">
+                        <div class="price-slider">
+                            <div class="range__text">
+                                <h3>Range Slider</h3>
+                                <span id="min-price" data-currency="₽" class="slider-price">0</span>
+                                <span class="seperator">-</span> <span id="max-price" data-currency="₽" data-max="10000" class="slider-price">0</span>
+                            </div>
+                            <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                            </div>
+        
+                        </div>
+                        <p>Стоимость за сутки пребывания в номере</p>
+                    </div>
+        
+                </div>
+                <h3>Checkbox Buttons</h3>
+                <div class="checkbox">
+                    <input class="checkbox-input" type="checkbox" name="" id="inputCheckbox">
+                    <label for="inputCheckbox" class="checkbox-label">Можно курить</label>
+                </div>
+                <div class="checkbox">
+                    <input class="checkbox-input" type="checkbox" name="" id="inputCheckbox-pat">
+                    <label for="inputCheckbox-pat" class="checkbox-label">Можно с питомцами</label>
+                </div>
+                <div class="checkbox">
+                    <input class="checkbox-input" type="checkbox" name="" id="inputCheckbox-guest">
+                    <label for="inputCheckbox-guest" class="checkbox-label">Можно пригласить гостей (до 10 человек)</label>
+                </div>
+                <div class="richCheckbox">
+                    <h3>rich Checkbox Buttons</h3>
+                    <div class="checkbox">
+                        <input class="checkbox-input" type="checkbox" name="" id="inputCheckbox-rich">
+                        <label for="inputCheckbox-rich" class="checkbox-label">
+                            <div class="checkbox-label-text">
+                            <h3>Широкий коридор</h3>
+                            <p>Ширина коридоров в номере не менее 91 см.</p>
+                        </div>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox-input" type="checkbox" name="" id="inputCheckbox-help">
+                        <label for="inputCheckbox-help" class="checkbox-label">
+                            <div class="checkbox-label-text">
+                            <h3>Помощник для инвалидов</h3>
+                            <p>На 1 этаже вас встретит специалист  и проводит до номера.</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="input__box">
+                    <div class="input__text">
+                        <h3>удобства номера</h3>
+                    </div>
+                        <div class="select-dropdown-title">Сколько гостей
+                            <span><img src="img/expand_more.svg" alt="more"></span>
+                        </div>
+                        <div class="select-dropdown">
+                            <ul>
+                                <li>
+                                    <label for="">спальни</label>
+
+                                    <div class="number-input">
+                                        
+                                        <input type="number" min="0" class="js-input" value="0" />
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="">кровати</label>
+
+                                    <div class="number-input">
+                            
+                                        <input type="number" min="0" class="js-input" value="0" />
+                                        
+                                    </div>
+                                </li>
+                                <li> <label for="">ванные комнаты</label>
+
+                                    <div class="number-input">
+                            
+                                        <input type="number" min="0" class="js-input" value="0" />
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-dropdown-button">
+                                    <button type="button" class="dropdown-cancel">Очистить</button>
+                                    <button type="button"class="dropdown-apply">ПРИМЕНИТЬ</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </aside>
+            <section class="rooms">
+                <div class="items">
+                    <div class="items__carousel">
+                        <div class="item__carousel"><img src="img/luxury.png" alt="interior"></div>
+                        <div class="item__carousel"><img src="img/luxury.png" alt="interior"></div>
+                        <div class="item__carousel"><img src="img/luxury.png" alt="interior"></div>
+                      </div>
+                      <div class="items__count">
+                          <p>№ 888 <span class="items__count-span">люкс</span></p>
+                          <div class="items__price"> <span>9 990₽</span> в сутки</div>
+                      </div>
+                      <div class="items__range">
+                            <div id="full-stars-item">
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating1-none" value="0" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating1-1"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating1-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating1-2"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating1-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating1-3"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating1-3" value="3" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating1-4"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating1-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating1-5"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating1-5" value="5" type="radio">
+                                </div>
+                            </div>
+                            <div class="items__comments" >
+                            <span>145</span> Отзывов
+                            </div>
+                      </div>
+        
+                </div>
+                <div class="items__room">
+                    <div class="items__room-carousel">
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                      </div>
+                      <div class="items__room-count">
+                          <p>№ 840 </p>
+                          <div class="items__room-price"> <span>9 990₽</span> в сутки</div>
+                      </div>
+                      <div class="items__room-range">
+                            <div id="full-stars-item-room">
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating2-none" value="0" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-1"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-2"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-3"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-3" value="3" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-4"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-5"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-5" value="5" type="radio">
+                                </div>
+                            </div>
+                            <div class="items__room-comments" >
+                            <span>65</span> Отзывов
+                            </div>
+                      </div>
+        
+                </div>
+                <div class="items">
+                    <div class="items__carousel">
+                        <div class="item__carousel"><img src="img/luxury.png" alt="interior"></div>
+                        <div class="item__carousel"><img src="img/luxury.png" alt="interior"></div>
+                        <div class="item__carousel"><img src="img/luxury.png" alt="interior"></div>
+                      </div>
+                      <div class="items__count">
+                          <p>№ 888 <span class="items__count-span">люкс</span></p>
+                          <div class="items__price"> <span>9 990₽</span> в сутки</div>
+                      </div>
+                      <div class="items__range">
+                            <div id="full-stars-item">
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating1-none" value="0" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating1-1"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating1-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating1-2"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating1-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating1-3"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating1-3" value="3" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating1-4"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating1-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating1-5"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating1-5" value="5" type="radio">
+                                </div>
+                            </div>
+                            <div class="items__comments" >
+                            <span>145</span> Отзывов
+                            </div>
+                      </div>
+        
+                </div>
+                <div class="items__room">
+                    <div class="items__room-carousel">
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                      </div>
+                      <div class="items__room-count">
+                          <p>№ 840 </p>
+                          <div class="items__room-price"> <span>9 990₽</span> в сутки</div>
+                      </div>
+                      <div class="items__room-range">
+                            <div id="full-stars-item-room">
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating2-none" value="0" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-1"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-2"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-3"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-3" value="3" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-4"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-5"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-5" value="5" type="radio">
+                                </div>
+                            </div>
+                            <div class="items__room-comments" >
+                            <span>65</span> Отзывов
+                            </div>
+                      </div>
+        
+                </div>
+                <div class="items__room">
+                    <div class="items__room-carousel">
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                      </div>
+                      <div class="items__room-count">
+                          <p>№ 840 </p>
+                          <div class="items__room-price"> <span>9 990₽</span> в сутки</div>
+                      </div>
+                      <div class="items__room-range">
+                            <div id="full-stars-item-room">
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating2-none" value="0" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-1"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-2"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-3"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-3" value="3" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-4"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-5"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-5" value="5" type="radio">
+                                </div>
+                            </div>
+                            <div class="items__room-comments" >
+                            <span>65</span> Отзывов
+                            </div>
+                      </div>
+        
+                </div>
+                <div class="items__room">
+                    <div class="items__room-carousel">
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                      </div>
+                      <div class="items__room-count">
+                          <p>№ 840 </p>
+                          <div class="items__room-price"> <span>9 990₽</span> в сутки</div>
+                      </div>
+                      <div class="items__room-range">
+                            <div id="full-stars-item-room">
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating2-none" value="0" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-1"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-2"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-3"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-3" value="3" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-4"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-5"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-5" value="5" type="radio">
+                                </div>
+                            </div>
+                            <div class="items__room-comments" >
+                            <span>65</span> Отзывов
+                            </div>
+                      </div>
+        
+                </div>
+                <div class="items__room">
+                    <div class="items__room-carousel">
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                      </div>
+                      <div class="items__room-count">
+                          <p>№ 840 </p>
+                          <div class="items__room-price"> <span>9 990₽</span> в сутки</div>
+                      </div>
+                      <div class="items__room-range">
+                            <div id="full-stars-item-room">
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating2-none" value="0" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-1"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-2"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-3"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-3" value="3" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-4"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-5"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-5" value="5" type="radio">
+                                </div>
+                            </div>
+                            <div class="items__room-comments" >
+                            <span>65</span> Отзывов
+                            </div>
+                      </div>
+        
+                </div>
+                <div class="items__room">
+                    <div class="items__room-carousel">
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                      </div>
+                      <div class="items__room-count">
+                          <p>№ 840 </p>
+                          <div class="items__room-price"> <span>9 990₽</span> в сутки</div>
+                      </div>
+                      <div class="items__room-range">
+                            <div id="full-stars-item-room">
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating2-none" value="0" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-1"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-2"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-3"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-3" value="3" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-4"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-5"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-5" value="5" type="radio">
+                                </div>
+                            </div>
+                            <div class="items__room-comments" >
+                            <span>65</span> Отзывов
+                            </div>
+                      </div>
+        
+                </div>
+                <div class="items__room">
+                    <div class="items__room-carousel">
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                      </div>
+                      <div class="items__room-count">
+                          <p>№ 840 </p>
+                          <div class="items__room-price"> <span>9 990₽</span> в сутки</div>
+                      </div>
+                      <div class="items__room-range">
+                            <div id="full-stars-item-room">
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating2-none" value="0" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-1"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-2"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-3"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-3" value="3" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-4"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-5"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-5" value="5" type="radio">
+                                </div>
+                            </div>
+                            <div class="items__room-comments" >
+                            <span>65</span> Отзывов
+                            </div>
+                      </div>
+        
+                </div>
+                <div class="items__room">
+                    <div class="items__room-carousel">
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                      </div>
+                      <div class="items__room-count">
+                          <p>№ 840 </p>
+                          <div class="items__room-price"> <span>9 990₽</span> в сутки</div>
+                      </div>
+                      <div class="items__room-range">
+                            <div id="full-stars-item-room">
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating2-none" value="0" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-1"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-2"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-3"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-3" value="3" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-4"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-5"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-5" value="5" type="radio">
+                                </div>
+                            </div>
+                            <div class="items__room-comments" >
+                            <span>65</span> Отзывов
+                            </div>
+                      </div>
+        
+                </div>
+                <div class="items__room">
+                    <div class="items__room-carousel">
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                      </div>
+                      <div class="items__room-count">
+                          <p>№ 840 </p>
+                          <div class="items__room-price"> <span>9 990₽</span> в сутки</div>
+                      </div>
+                      <div class="items__room-range">
+                            <div id="full-stars-item-room">
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating2-none" value="0" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-1"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-2"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-3"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-3" value="3" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-4"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-5"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-5" value="5" type="radio">
+                                </div>
+                            </div>
+                            <div class="items__room-comments" >
+                            <span>65</span> Отзывов
+                            </div>
+                      </div>
+        
+                </div>
+                <div class="items__room">
+                    <div class="items__room-carousel">
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                        <div class="item__room-carousel"><img src="img/room.png" alt="interior"></div>
+                      </div>
+                      <div class="items__room-count">
+                          <p>№ 840 </p>
+                          <div class="items__room-price"> <span>9 990₽</span> в сутки</div>
+                      </div>
+                      <div class="items__room-range">
+                            <div id="full-stars-item-room">
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating2-none" value="0" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-1"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-1" value="1" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-2"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-2" value="2" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-3"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-3" value="3" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-4"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-4" value="4" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-5"><i class="far fa-star rating__icon rating__icon--star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating2-5" value="5" type="radio">
+                                </div>
+                            </div>
+                            <div class="items__room-comments" >
+                            <span>65</span> Отзывов
+                            </div>
+                      </div>
+        
+                </div>
+
+            </section>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/jquery.nice-number.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="dist/js/datepicker.min.js"></script>
+    <script src="dist/js/i18n/datepicker.en.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

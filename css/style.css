@@ -1993,6 +1993,10 @@ p {
   color: #575871;
 }
 
+.widgets__social-link a {
+  margin-right: 20px;
+}
+
 .footer-text {
   font: normal normal 14px/24px "Montserrat", sans-serif;
   color: #575871;

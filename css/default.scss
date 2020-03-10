@@ -31,6 +31,9 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.container {
+    padding: 0  140px;
+}
 
 .colors {
     display: inline-block;
@@ -1057,7 +1060,7 @@ p {
 }
 
 .selector #slider-range {
-    width: 90%;
+    width: 266px;
     margin-bottom: 30px;
     border: none;
     border: 1px solid rgba(31, 32, 65, 0.25);
@@ -1069,7 +1072,7 @@ p {
 
 @media (min-width: 768px) {
     .selector #slider-range {
-        width: 100%
+        width: 266px;
     }
 }
 
@@ -1107,7 +1110,7 @@ p {
 .selector .slider-price:after {
     position: absolute;
     top: 50%;
-    right: 13px;
+    right: 0px;
     margin-top: 0;
     color: $color-grey;
     content: attr(data-currency);
@@ -1531,7 +1534,7 @@ p {
 }
 
 .range__text {
-    width: 100%;
+    width: 266px;
     display: flex;
     justify-content: space-between;
     align-items: center;
