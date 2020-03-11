@@ -1,5 +1,62 @@
 @import "default";
 
+.body {
+    padding: 0;
+    margin: 0;
+}
+
 .menu__filter {
     width: 300px;
+    margin-top: 30px;
 }
+
+.input__drop {
+    width: 260px;
+}
+
+.select-dropdown {
+    ul {
+        width: 258px;
+    }
+}
+
+.select-dropdown-title {
+    width: 260px;
+}
+
+.rooms__box {
+    display: flex;
+
+}
+
+.selector {
+    padding: 0;
+    width: 260px;
+
+}
+#slider-range {
+        p {
+       font-size: 12px;
+        line-height: 14px;
+        width: 264px;
+        color: $color-grey;
+    }
+}
+
+.checkbox {
+    width: 222px;
+
+}
+
+.rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.items {
+    margin: 20px 10px;
+    &__room {
+        margin: 20px 10px;
+    }
+} 

@@ -428,7 +428,9 @@ p {
         }
     }
     &-button {
-        display: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -1543,7 +1545,6 @@ p {
 // widgets footer
 .widgets {
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    background: #fff;
     &__nav {
         display: flex;
         justify-content: space-between;
