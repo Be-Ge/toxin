@@ -1,11 +1,21 @@
 @import "default";
 
 // registration
+body{
+    padding: 0;
+    margin: 0;
+}
 
 .bg__registration {
+    width: 100%;
     background: url(../img/sign-in.png) no-repeat;
     background-size: cover;
     background-position: center;
     height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;  
+}
 
+.register {
+    margin-top: 30px;
 }

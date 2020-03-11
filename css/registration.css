@@ -2073,10 +2073,26 @@ p {
   font-size: 12px;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .bg__registration {
+  width: 100%;
   background: url(../img/sign-in.png) no-repeat;
   background-size: cover;
   background-position: center;
   height: calc(100vh - 70px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.register {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=registration.css.map */
