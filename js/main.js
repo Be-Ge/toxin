@@ -1,3 +1,5 @@
+// slick
+
 $("#slider-range").slider({
     range: true,
     min: 0,
@@ -24,6 +26,10 @@ $('.items__carousel').slick({
 $('.items__room-carousel').slick({
     dots: true,
 });
+$('.selector').slick({
+    nextArrow: '<i class="fas fa-chevron-right"></i>',
+    prevArrow: '<i class="fas fa-chevron-left"></i>',
+  });
 
 // dropdown
 
