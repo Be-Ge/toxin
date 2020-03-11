@@ -74,7 +74,12 @@
 }
 
 .slick-prev:before {
-  content: "←";
+  content: "\f053";
+  font-family: "Font Awesome 5 Pro";
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 900;
 }
 
 [dir="rtl"] .slick-prev:before {
@@ -91,7 +96,12 @@
 }
 
 .slick-next:before {
-  content: "→";
+  content: "\f054";
+  font-family: "Font Awesome 5 Pro";
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 900;
 }
 
 [dir="rtl"] .slick-next:before {
@@ -106,6 +116,7 @@
 .slick-dots {
   position: absolute;
   bottom: 10px;
+  right: -90px;
   list-style: none;
   display: block;
   text-align: center;
