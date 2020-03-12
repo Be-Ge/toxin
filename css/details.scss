@@ -1,0 +1,45 @@
+@import "default";
+
+// room details page
+
+
+
+.slider {
+    display: flex;
+    &__img-main {
+        width: 70%;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__img-rooms {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        img {
+            object-fit: cover;
+            height: 50%;
+        }
+    }
+}
+
+.comments {
+    width: 50%;
+    &__title {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.avatarList-title {
+    width: 100%;
+}
+.bullet__section {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    &-info {
+        width: 50%;
+    }
+}

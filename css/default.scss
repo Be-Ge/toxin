@@ -29,6 +29,8 @@ sans-serif;
 body {
     font-family: 'Quicksand', sans-serif;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -1153,13 +1155,18 @@ p {
 .avatar {
     display: flex;
     justify-content: flex-start;
+    color: $color-blue;
     &List-title {
         margin-top: 10px;
         width: 50%;
         margin-bottom: 20px;
+        h3 {
+            opacity: 0.75;
+            margin-bottom: 0;
+        }
         p {
             font: $body;
-            color: $color-blue;
+            margin-top: 0;
         }
     }
     &Like {
@@ -1623,7 +1630,7 @@ p {
         border-bottom: 1px solid $color-white;
         width: rem(300px);
         div {
-            margin: rem(20px) 0;
+            margin: rem(20px) 10px;
         }
     }
     &-title {
@@ -1633,6 +1640,7 @@ p {
             margin: 5px;
             padding: 0;
             width: rem(240px);
+            color: $color-blue;
         }
         h3 {
             line-height: 18px;
@@ -1640,8 +1648,8 @@ p {
             color: $color-blue;
         }
         p {
-            line-height: 14px;
-            font-size: 12px;
+            font-size: 14px;
+            line-height: 24px;  
         }
     }
 }

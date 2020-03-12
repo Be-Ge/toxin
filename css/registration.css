@@ -502,10 +502,6 @@ p {
           align-items: center;
 }
 
-.select-dropdown ul li:hover {
-  background-color: #f4f4f5;
-}
-
 .select-dropdown ul li label {
   font: normal normal 14px/24px "Montserrat", sans-serif;
   font-weight: bold;

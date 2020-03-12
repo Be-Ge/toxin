@@ -2090,4 +2090,69 @@ p {
   font-size: 14px;
   line-height: 24px;
 }
-/*# sourceMappingURL=default.css.map */
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__img-main {
+  width: 70%;
+}
+
+.slider__img-main img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider__img-rooms {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider__img-rooms img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 50%;
+}
+
+.comments {
+  width: 50%;
+}
+
+.comments__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.avatarList-title {
+  width: 100%;
+}
+
+.bullet__section {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.bullet__section-info {
+  width: 50%;
+}
+/*# sourceMappingURL=details.css.map */
