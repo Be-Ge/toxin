@@ -356,7 +356,6 @@ p {
 
 // dropdown
 .select-dropdown {
-    $hover: $color-white;
     display: inline-block;
     position: relative;
     color: #53565a;
@@ -416,9 +415,6 @@ p {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            &:hover {
-                background-color: $hover;
-            }
             label {
                 font: $body;
                 font-weight: bold;
@@ -1551,6 +1547,9 @@ p {
         height: rem(372px);
         align-items: baseline;
         padding-top: 100px;
+        padding-left: 150px;
+        padding-right: 150px;
+        box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
         &-logo {
             width: rem(320px);
         }
@@ -1575,6 +1574,9 @@ p {
         justify-content: space-between;
         height: rem(70px);
         align-items: center;
+        padding-left: 150px;
+        padding-right: 150px;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
         &-copy {
             font: $body;
             color: $color-blue;

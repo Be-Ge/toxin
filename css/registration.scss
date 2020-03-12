@@ -8,14 +8,21 @@ body{
 
 .bg__registration {
     width: 100%;
-    background: url(../img/sign-in.png) no-repeat;
+    background: #cccccc url(../img/sign-in.png) no-repeat;
     background-size: cover;
-    background-position: center;
-    height: calc(100vh - 70px);
+    background-position: center; 
+    padding: 50px 0;
     display: flex;
     justify-content: center;  
     align-items: center;
 }
 
+.register {
+    margin: 30px;
+}
+
 //  sign in 
 
+.login {
+    margin: 100px;
+}

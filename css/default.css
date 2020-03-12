@@ -502,10 +502,6 @@ p {
           align-items: center;
 }
 
-.select-dropdown ul li:hover {
-  background-color: #f4f4f5;
-}
-
 .select-dropdown ul li label {
   font: normal normal 14px/24px "Montserrat", sans-serif;
   font-weight: bold;
@@ -1958,6 +1954,10 @@ p {
       -ms-flex-align: baseline;
           align-items: baseline;
   padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  -webkit-box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+          box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
 }
 
 .widgets__nav-logo {
@@ -1995,6 +1995,10 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .widgets__social-copy {

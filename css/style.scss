@@ -5,9 +5,8 @@ body {
     padding: 0;
 }
 
-
 .bg__main {
-    background: url(../img/main-lp.png) no-repeat;
+    background: #e3d4d1 url(../img/main-lp.png) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -28,7 +27,6 @@ body {
         margin-top: 70px;
         height: 400px;;
     }
-
 }
 
 .select-dropdown-button {
@@ -36,3 +34,4 @@ body {
     justify-content: space-between;
     width: 100%;
 }
+
