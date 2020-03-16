@@ -1,6 +1,8 @@
 body {
   font-family: 'Quicksand', sans-serif;
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -1380,6 +1382,7 @@ p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  color: #575871;
 }
 
 .avatarList-title {
@@ -1388,9 +1391,14 @@ p {
   margin-bottom: 20px;
 }
 
+.avatarList-title h3 {
+  opacity: 0.75;
+  margin-bottom: 0;
+}
+
 .avatarList-title p {
   font: normal normal 14px/24px "Montserrat", sans-serif;
-  color: #575871;
+  margin-top: 0;
 }
 
 .avatarLike {
@@ -2057,7 +2065,7 @@ p {
 }
 
 .textList-box div {
-  margin: 1.25rem 0;
+  margin: 1.25rem 10px;
 }
 
 .textList-title {
@@ -2069,6 +2077,7 @@ p {
   margin: 5px;
   padding: 0;
   width: 15rem;
+  color: #575871;
 }
 
 .textList-title h3 {
@@ -2078,8 +2087,8 @@ p {
 }
 
 .textList-title p {
-  line-height: 14px;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .body {

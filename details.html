@@ -32,130 +32,221 @@
             <li><a class="standart__nav-register" href="registration.html">зарегистрироваться</a></li>
         </ul>
     </header>
-    <!-- end header -->
+    <!-- end header -->       
+     <section class="slider">
+            <div class="slider__img-main">
+                <img src="img/details_main.png" alt="room">
+            </div>
+            <div  class="slider__img-rooms">
+                <img src="img/details_s_room.png" alt="room">
+                <img src="img/details_th_room.png" alt="room">
+            </div>  
+        </section>
+    <section class="main__info container">
 
-    <section class="slider">
-        <div class="slider__img-main">
-            <img src="img/details_main.png" alt="room">
-        </div>
-        <div  class="slider__img-rooms">
-            <img src="img/details_s_room.png" alt="room">
-            <img src="img/details_th_room.png" alt="room">
-        </div>  
-    </section>
-    <section>
-        <section class="textList-section container" >
-            <h2>Сведения о номере</h2>
-            <div class="textList">
-                <div class="textList-box">
-                    <div>
-                        <img src="img/insert_emoticon.svg" alt="smile">
+        <section>
+            <section class="textList-section " >
+                <h2>Сведения о номере</h2>
+                <div class="textList">
+                    <div class="textList-box">
+                        <div>
+                            <img src="img/insert_emoticon.svg" alt="smile">
+                        </div>
+                        <div class="textList-title">
+                            <h3>
+                                Комфорт
+                            </h3>
+                            <p>Шумопоглощающие стены</p>
+        
+                        </div>
                     </div>
-                    <div class="textList-title">
-                        <h3>
-                            Комфорт
-                        </h3>
-                        <p>Шумопоглощающие стены</p>
-    
+                    <div class="textList-box">
+                        <div>
+                            <img src="img/location_city.svg" alt="smile">
+                        </div>
+                        <div class="textList-title">
+                            <h3>
+                                Удобство
+                            </h3>
+                            <p>Окно в каждой из спален</p>
+                            <!-- какойто-то комментарий -->
+                        </div>
                     </div>
-                </div>
-                <div class="textList-box">
-                    <div>
-                        <img src="img/location_city.svg" alt="smile">
-                    </div>
-                    <div class="textList-title">
-                        <h3>
-                            Удобство
-                        </h3>
-                        <p>Окно в каждой из спален</p>
-                        <!-- какойто-то комментарий -->
-                    </div>
-                </div>
-                <div class="textList-box">
-                    <div>
-                        <img src="img/whatshot.svg" alt="fire">
-                    </div>
-                    <div class="textList-title">
-                        <h3>
-                            Уют 
-                        </h3>
-                        <p> Номер оснащён камином</p>
-    
+                    <div class="textList-box">
+                        <div>
+                            <img src="img/whatshot.svg" alt="fire">
+                        </div>
+                        <div class="textList-title">
+                            <h3>
+                                Уют 
+                            </h3>
+                            <p> Номер оснащён камином</p>
+        
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="comments container">
-            <div class="comments__title">
-                <h2>Отзывы посетителей номера</h2>
-                <p>2 отзыва</p>
-            </div>
+            </section>
             
-            <div class="avatar">
-                <div class="avatarLike">
-                    <div>
-                        <img src="img/avatar.png" alt="smile">
+            <section class="comments ">
+                <div class="comments__title">
+                    <h2>Отзывы посетителей номера</h2>
+                    <p>2 отзыва</p>
+                </div>
+                
+                <div class="avatar">
+                    <div class="avatarLike">
+                        <div>
+                            <img src="img/avatar.png" alt="smile">
+                        </div>
+                        <div class="like">
+                            <input class="like__input" type="checkbox" name="" id="inputLike">
+                            <label for="inputLike" class="like__label">
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.03906 6.73438C5.66406 6.17448 6.1263 5.7513 6.42578 5.46484C6.72526 5.17839 7.05078 4.83984 7.40234 4.44922C7.75391 4.05859 7.99479 3.71354 8.125 3.41406C8.26823 3.11458 8.33984 2.82161 8.33984 2.53516C8.33984 2.11849 8.19661 1.77344 7.91016 1.5C7.63672 1.22656 7.29167 1.08984 6.875 1.08984C6.54948 1.08984 6.24349 1.18099 5.95703 1.36328C5.68359 1.54557 5.49479 1.77995 5.39062 2.06641H4.60938C4.50521 1.77995 4.3099 1.54557 4.02344 1.36328C3.75 1.18099 3.45052 1.08984 3.125 1.08984C2.70833 1.08984 2.35677 1.22656 2.07031 1.5C1.79688 1.77344 1.66016 2.11849 1.66016 2.53516C1.66016 2.82161 1.72526 3.11458 1.85547 3.41406C1.9987 3.71354 2.24609 4.05859 2.59766 4.44922C2.94922 4.83984 3.27474 5.17839 3.57422 5.46484C3.8737 5.7513 4.33594 6.17448 4.96094 6.73438L5 6.77344L5.03906 6.73438ZM6.875 0.25C7.52604 0.25 8.06641 0.471354 8.49609 0.914062C8.9388 1.35677 9.16016 1.89714 9.16016 2.53516C9.16016 2.91276 9.08854 3.28385 8.94531 3.64844C8.80208 4 8.53516 4.39714 8.14453 4.83984C7.76693 5.28255 7.42188 5.65365 7.10938 5.95312C6.79688 6.2526 6.29557 6.71484 5.60547 7.33984L5 7.88672L4.39453 7.35938C3.49609 6.55208 2.84505 5.94661 2.44141 5.54297C2.05078 5.13932 1.6862 4.66406 1.34766 4.11719C1.00911 3.57031 0.839844 3.04297 0.839844 2.53516C0.839844 1.89714 1.05469 1.35677 1.48438 0.914062C1.92708 0.471354 2.47396 0.25 3.125 0.25C3.88021 0.25 4.50521 0.542969 5 1.12891C5.49479 0.542969 6.11979 0.25 6.875 0.25Z" fill="#1F2041" fill-opacity="0.25"/>
+                                </svg>
+                                
+                            <span>2</span>
+                        </label>
+                        </div>
                     </div>
-                    <div class="like">
-                        <input class="like__input" type="checkbox" name="" id="inputLike">
-                        <label for="inputLike" class="like__label">
-                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.03906 6.73438C5.66406 6.17448 6.1263 5.7513 6.42578 5.46484C6.72526 5.17839 7.05078 4.83984 7.40234 4.44922C7.75391 4.05859 7.99479 3.71354 8.125 3.41406C8.26823 3.11458 8.33984 2.82161 8.33984 2.53516C8.33984 2.11849 8.19661 1.77344 7.91016 1.5C7.63672 1.22656 7.29167 1.08984 6.875 1.08984C6.54948 1.08984 6.24349 1.18099 5.95703 1.36328C5.68359 1.54557 5.49479 1.77995 5.39062 2.06641H4.60938C4.50521 1.77995 4.3099 1.54557 4.02344 1.36328C3.75 1.18099 3.45052 1.08984 3.125 1.08984C2.70833 1.08984 2.35677 1.22656 2.07031 1.5C1.79688 1.77344 1.66016 2.11849 1.66016 2.53516C1.66016 2.82161 1.72526 3.11458 1.85547 3.41406C1.9987 3.71354 2.24609 4.05859 2.59766 4.44922C2.94922 4.83984 3.27474 5.17839 3.57422 5.46484C3.8737 5.7513 4.33594 6.17448 4.96094 6.73438L5 6.77344L5.03906 6.73438ZM6.875 0.25C7.52604 0.25 8.06641 0.471354 8.49609 0.914062C8.9388 1.35677 9.16016 1.89714 9.16016 2.53516C9.16016 2.91276 9.08854 3.28385 8.94531 3.64844C8.80208 4 8.53516 4.39714 8.14453 4.83984C7.76693 5.28255 7.42188 5.65365 7.10938 5.95312C6.79688 6.2526 6.29557 6.71484 5.60547 7.33984L5 7.88672L4.39453 7.35938C3.49609 6.55208 2.84505 5.94661 2.44141 5.54297C2.05078 5.13932 1.6862 4.66406 1.34766 4.11719C1.00911 3.57031 0.839844 3.04297 0.839844 2.53516C0.839844 1.89714 1.05469 1.35677 1.48438 0.914062C1.92708 0.471354 2.47396 0.25 3.125 0.25C3.88021 0.25 4.50521 0.542969 5 1.12891C5.49479 0.542969 6.11979 0.25 6.875 0.25Z" fill="#1F2041" fill-opacity="0.25"/>
-                            </svg>
-                            
-                        <span>2</span>
-                    </label>
+                    <div class="avatarList-title">
+                        <h3>
+                            Мурад Сарафанов
+                        </h3>
+                        <p> 5 дней назад</p>
+                        <p>Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
                     </div>
                 </div>
-                <div class="avatarList-title">
-                    <h3>
-                        Мурад Сарафанов
+                <div class="avatar">
+                    <div class="avatarLike">
+                        <div>
+                            <img src="img/avatar_girl.png" alt="smile">
+                        </div>
+                        <div class="like">
+                            <input class="like__input" type="checkbox" name="" id="inputLike">
+                            <label for="inputLike" class="like__label">
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.03906 6.73438C5.66406 6.17448 6.1263 5.7513 6.42578 5.46484C6.72526 5.17839 7.05078 4.83984 7.40234 4.44922C7.75391 4.05859 7.99479 3.71354 8.125 3.41406C8.26823 3.11458 8.33984 2.82161 8.33984 2.53516C8.33984 2.11849 8.19661 1.77344 7.91016 1.5C7.63672 1.22656 7.29167 1.08984 6.875 1.08984C6.54948 1.08984 6.24349 1.18099 5.95703 1.36328C5.68359 1.54557 5.49479 1.77995 5.39062 2.06641H4.60938C4.50521 1.77995 4.3099 1.54557 4.02344 1.36328C3.75 1.18099 3.45052 1.08984 3.125 1.08984C2.70833 1.08984 2.35677 1.22656 2.07031 1.5C1.79688 1.77344 1.66016 2.11849 1.66016 2.53516C1.66016 2.82161 1.72526 3.11458 1.85547 3.41406C1.9987 3.71354 2.24609 4.05859 2.59766 4.44922C2.94922 4.83984 3.27474 5.17839 3.57422 5.46484C3.8737 5.7513 4.33594 6.17448 4.96094 6.73438L5 6.77344L5.03906 6.73438ZM6.875 0.25C7.52604 0.25 8.06641 0.471354 8.49609 0.914062C8.9388 1.35677 9.16016 1.89714 9.16016 2.53516C9.16016 2.91276 9.08854 3.28385 8.94531 3.64844C8.80208 4 8.53516 4.39714 8.14453 4.83984C7.76693 5.28255 7.42188 5.65365 7.10938 5.95312C6.79688 6.2526 6.29557 6.71484 5.60547 7.33984L5 7.88672L4.39453 7.35938C3.49609 6.55208 2.84505 5.94661 2.44141 5.54297C2.05078 5.13932 1.6862 4.66406 1.34766 4.11719C1.00911 3.57031 0.839844 3.04297 0.839844 2.53516C0.839844 1.89714 1.05469 1.35677 1.48438 0.914062C1.92708 0.471354 2.47396 0.25 3.125 0.25C3.88021 0.25 4.50521 0.542969 5 1.12891C5.49479 0.542969 6.11979 0.25 6.875 0.25Z" fill="#1F2041" fill-opacity="0.25"/>
+                                </svg>
+                                
+                            <span>2</span>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="avatarList-title">
+                        <h3>
+                            Патрисия Стёклышкова
                     </h3>
-                    <p> 5 дней назад</p>
-                    <p>Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
+                        <p> Неделю назад </p>
+                        <p>Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</p>
+                    </div>
                 </div>
-            </div>
-            <div class="avatar">
-                <div class="avatarLike">
+            </section>
+            <section class="bullet__section ">
+                <div class="bullet">
+                    <h2>Правила</h2>
+                    <ul class="bulletList">
+                        <li>Нельзя с питомцами</li>
+                        <li>Без вечеринок и мероприятий</li>
+                        <li>Время прибытия — после 13:00, а выезд до 12:00</li>
+                    </ul>
+                </div>
+                <div class="bullet__section-info">
+                    <h2>Отмена</h2>
+                    <p>
+                        Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+                    </p>
+                </div>
+            </section>
+        </section>
+        <!-- aside  -->
+        <aside>
+            <div class="check">
+                <div class="check__box">
+                    <h2>№ 888 <span class="items__count-span">люкс</span></h2>
+                    <div class="items__price"> <span>9 990₽</span> в сутки</div>
+                </div>
+                <div class="roomDropdown">
                     <div>
-                        <img src="img/avatar_girl.png" alt="smile">
+                        <h3>прибытие</h3>
+                        <input id='dropdownIcon' type='text' class='datepicker-here input__drop roomDropdown-input' placeholder="ДД.ММ.ГГГГ" />
                     </div>
-                    <div class="like">
-                        <input class="like__input" type="checkbox" name="" id="inputLike">
-                        <label for="inputLike" class="like__label">
-                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.03906 6.73438C5.66406 6.17448 6.1263 5.7513 6.42578 5.46484C6.72526 5.17839 7.05078 4.83984 7.40234 4.44922C7.75391 4.05859 7.99479 3.71354 8.125 3.41406C8.26823 3.11458 8.33984 2.82161 8.33984 2.53516C8.33984 2.11849 8.19661 1.77344 7.91016 1.5C7.63672 1.22656 7.29167 1.08984 6.875 1.08984C6.54948 1.08984 6.24349 1.18099 5.95703 1.36328C5.68359 1.54557 5.49479 1.77995 5.39062 2.06641H4.60938C4.50521 1.77995 4.3099 1.54557 4.02344 1.36328C3.75 1.18099 3.45052 1.08984 3.125 1.08984C2.70833 1.08984 2.35677 1.22656 2.07031 1.5C1.79688 1.77344 1.66016 2.11849 1.66016 2.53516C1.66016 2.82161 1.72526 3.11458 1.85547 3.41406C1.9987 3.71354 2.24609 4.05859 2.59766 4.44922C2.94922 4.83984 3.27474 5.17839 3.57422 5.46484C3.8737 5.7513 4.33594 6.17448 4.96094 6.73438L5 6.77344L5.03906 6.73438ZM6.875 0.25C7.52604 0.25 8.06641 0.471354 8.49609 0.914062C8.9388 1.35677 9.16016 1.89714 9.16016 2.53516C9.16016 2.91276 9.08854 3.28385 8.94531 3.64844C8.80208 4 8.53516 4.39714 8.14453 4.83984C7.76693 5.28255 7.42188 5.65365 7.10938 5.95312C6.79688 6.2526 6.29557 6.71484 5.60547 7.33984L5 7.88672L4.39453 7.35938C3.49609 6.55208 2.84505 5.94661 2.44141 5.54297C2.05078 5.13932 1.6862 4.66406 1.34766 4.11719C1.00911 3.57031 0.839844 3.04297 0.839844 2.53516C0.839844 1.89714 1.05469 1.35677 1.48438 0.914062C1.92708 0.471354 2.47396 0.25 3.125 0.25C3.88021 0.25 4.50521 0.542969 5 1.12891C5.49479 0.542969 6.11979 0.25 6.875 0.25Z" fill="#1F2041" fill-opacity="0.25"/>
-                            </svg>
+                    <div>
+                        <h3>выезд</h3>
+                        <input id='dropdownIcon' type='text' class='datepicker-here input__drop' placeholder="ДД.ММ.ГГГГ" />
+                    </div>
+                    
+                </div>  
+                <div class="input__box">
+                    <div class="input__text">
+                        <h3>Dropdown</h3>
+                        <p class="input__paragraph">Default</p>
+                    </div>
+                        <div class="select-dropdown-title">Сколько гостей
+                            <span><img src="img/expand_more.svg" alt="more"></span>
+                        </div>
+                        <div class="select-dropdown">
+                            <ul>
+                                <li>
+                                    <label for="">спальни</label>
+
+                                    <div class="number-input">
+                                        
+                                        <input type="number" min="0" class="js-input" value="0" />
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="">кровати</label>
+
+                                    <div class="number-input">
                             
-                        <span>2</span>
-                    </label>
-                    </div>
+                                        <input type="number" min="0" class="js-input" value="0" />
+                                        
+                                    </div>
+                                </li>
+                                <li> <label for="">ванные комнаты</label>
+
+                                    <div class="number-input">
+                            
+                                        <input type="number" min="0" class="js-input" value="0" />
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-dropdown-button">
+                                    <button type="button" class="dropdown-cancel button-grey">Очистить</button>
+                                    <button type="button"class="dropdown-apply button-color">ПРИМЕНИТЬ</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                 </div>
-                <div class="avatarList-title">
-                    <h3>
-                        Патрисия Стёклышкова
-                   </h3>
-                    <p> Неделю назад </p>
-                    <p>Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</p>
+                <div class="check__box">
+                    <p>9 990₽ х 4 суток</p>
+                    <p>39 960₽</p>
                 </div>
+                <div class="check__box">
+                    <p>Сбор за услуги: скидка 2 179₽</p>
+                    <img src="img/info.svg" alt="information">
+                    <p>0₽</p>
+                </div>
+                <div class="check__box">
+                    <p>Сбор за дополнительные услуги</p>
+                    <img src="img/info.svg" alt="information">
+                    <p>300₽</p>
+                </div>
+                <div class="check__box">
+                    <H2>Итого</H2>
+                    <DIV class= "check__box-border"></DIV>
+                    <h2>38 081₽</h2>
+                </div>
+                <a class="btn-link">
+                    забронировать
+                </a>
             </div>
-        </section>
-        <section class="bullet__section container">
-            <div class="bullet">
-                <h2>Правила</h2>
-                <ul class="bulletList">
-                    <li>Нельзя с питомцами</li>
-                    <li>Без вечеринок и мероприятий</li>
-                    <li>Время прибытия — после 13:00, а выезд до 12:00</li>
-                </ul>
-            </div>
-            <div class="bullet__section-info">
-                <h2>Отмена</h2>
-                <p>
-                    Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
-                </p>
-            </div>
-        </section>
+
+        </aside>
     </section>
     <!-- footer  -->
     <footer class="widgets">

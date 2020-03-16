@@ -1,13 +1,18 @@
 @import "default";
 
 // room details page
-
-.textList-section {
+.main__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-top: 70px;
 }
 
+
 .slider {
     display: flex;
+    height: 485px;
+    overflow: hidden;
     &__img-main {
         width: 70%;
         img {
@@ -27,21 +32,39 @@
 }
 
 .comments {
-    width: 50%;
+    width: 70%;
     &__title {
         display: flex;
         justify-content: space-between;
+        p {
+            color: $color-blue;
+        }
     }
 }
 .avatarList-title {
     width: 100%;
 }
+
+.bullet {
+    width: 40%;
+}
+
 .bullet__section {
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
     &-info {
-        width: 50%;
+        width: 40%;
+        p {
+            color: $color-blue;
+        }
     }
 }
+
+.textList-box:last-child {
+    border-bottom: none;
+}
+
+// Сheck 
+
