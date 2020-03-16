@@ -94,3 +94,14 @@ function numberHandler (e) {
   
   /*@TODO remove*/
   $('.select-dropdown-button').hide()
+
+//   like btn
+
+function myFunction() {
+    var x = document.getElementById ("likeButton");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}
