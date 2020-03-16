@@ -990,16 +990,77 @@ p {
   line-height: 12px;
   text-align: center;
   color: #c7c7cf;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 
-.like__btn-grey {
+.like__label::before {
+  content: " ";
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  width: 2.5rem;
+  height: 1.25rem;
+  display: inline-block;
   position: absolute;
+  top: 1px;
+  left: 0;
+  z-index: 1;
 }
 
-.like__btn-purple {
+.like__label::after {
+  content: " ";
+  border: 1px solid #BC9CFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  width: 2.5rem;
+  height: 1.25rem;
+  display: inline-block;
   position: absolute;
+  top: 1px;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.like__label span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #c7c7cf;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.like-svg-after {
+  display: none;
+}
+
+.like__input:checked + .like__label:after {
+  opacity: 1;
+}
+
+.like__input:checked + .like__label span {
+  color: #BC9CFF;
+}
+
+.like__input:checked + svg.like-svg-after {
+  display: block;
+  z-index: 2;
 }
 
 .pagination {
