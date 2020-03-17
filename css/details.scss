@@ -68,3 +68,7 @@
 
 // Сheck 
 
+.like__input:checked + .like__label .far {
+    color: #BC9CFF;
+    font-weight: 900;
+}

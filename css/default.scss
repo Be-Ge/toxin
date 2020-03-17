@@ -35,6 +35,7 @@ body {
 
 .container {
     padding: 0  140px;
+    
 }
 
 .colors {
@@ -862,9 +863,7 @@ p {
         }
     }
 }
-.like-svg-after {
-    display: none;
-}
+
 
 .like__input:checked+.like__label:after {
     opacity: 1;
@@ -872,9 +871,9 @@ p {
 .like__input:checked+ .like__label span {
     color: $color-purple;
 }
-.like__input:checked + svg.like-svg-after {
-    display: block;
-    z-index: 2;
+.like__input:checked + .like__label .far {
+    color: #BC9CFF;
+    font-weight: 900;
 }
 // pagination
 .pagination {
