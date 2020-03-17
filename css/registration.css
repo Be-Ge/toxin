@@ -432,13 +432,12 @@ p {
 }
 
 .select-dropdown-title {
+  z-index: 1000;
   background: #FFFFFF;
   border: 1px solid #c7c7cf;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,6 +452,7 @@ p {
   height: 44px;
   font: normal normal 14px/24px "Montserrat", sans-serif;
   color: #575871;
+  cursor: pointer;
 }
 
 .select-dropdown.active i {
@@ -477,6 +477,7 @@ p {
 .select-dropdown ul {
   display: none;
   position: absolute;
+  top: -5px;
   z-index: 999;
   background: white;
   width: calc(100% - 2px);
@@ -648,6 +649,7 @@ p {
   text-transform: uppercase;
   -webkit-transition: all .3s;
   transition: all .3s;
+  cursor: pointer;
 }
 
 .button-bg:hover {
@@ -675,6 +677,7 @@ p {
   background: transparent;
   -webkit-transition: all .3s;
   transition: all .3s;
+  cursor: pointer;
 }
 
 .button-trans:hover {
@@ -689,6 +692,7 @@ p {
   font: normal bold 12px/15px "Montserrat", sans-serif;
   background: transparent;
   border: none;
+  cursor: pointer;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -705,6 +709,7 @@ p {
   font: normal bold 12px/15px "Montserrat", sans-serif;
   background: transparent;
   border: none;
+  cursor: pointer;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -736,6 +741,7 @@ p {
           align-items: center;
   -webkit-transition: all .3s;
   transition: all .3s;
+  cursor: pointer;
 }
 
 .btn-link:hover {

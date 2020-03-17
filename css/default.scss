@@ -538,6 +538,7 @@ p {
     border: none;
     text-transform: uppercase;
     transition: all .3s;
+    cursor: pointer;
     &:hover {
         opacity: 0.5;
     }
@@ -557,6 +558,7 @@ p {
     font: $btn;
     background: transparent;
     transition: all .3s;
+    cursor: pointer;
     &:hover {
         opacity: 0.5;
     }
@@ -607,6 +609,7 @@ p {
     justify-content: center;
     align-items: center;
     transition: all .3s;
+    cursor: pointer;
     &:hover {
         opacity: 0.5;
     }

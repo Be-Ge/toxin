@@ -649,6 +649,7 @@ p {
   text-transform: uppercase;
   -webkit-transition: all .3s;
   transition: all .3s;
+  cursor: pointer;
 }
 
 .button-bg:hover {
@@ -676,6 +677,7 @@ p {
   background: transparent;
   -webkit-transition: all .3s;
   transition: all .3s;
+  cursor: pointer;
 }
 
 .button-trans:hover {
@@ -739,6 +741,7 @@ p {
           align-items: center;
   -webkit-transition: all .3s;
   transition: all .3s;
+  cursor: pointer;
 }
 
 .btn-link:hover {
