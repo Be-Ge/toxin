@@ -402,6 +402,8 @@ p {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 90%;
+  cursor: pointer;
+  z-index: 4;
 }
 
 .input__email:focus ~ .label__email-link,
@@ -1046,10 +1048,6 @@ p {
   transition: all .3s;
 }
 
-.like-svg-after {
-  display: none;
-}
-
 .like__input:checked + .like__label:after {
   opacity: 1;
 }
@@ -1058,9 +1056,9 @@ p {
   color: #BC9CFF;
 }
 
-.like__input:checked + svg.like-svg-after {
-  display: block;
-  z-index: 2;
+.like__input:checked + .like__label .far {
+  color: #BC9CFF;
+  font-weight: 900;
 }
 
 .pagination {
@@ -1577,6 +1575,52 @@ p {
 
 .login-link {
   margin-top: 10px;
+}
+
+.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.check__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.check__box p {
+  color: #575871;
+}
+
+.check__box-border {
+  width: 182px;
+  border-bottom: 2px dotted #8e8f9f;
 }
 
 .items {

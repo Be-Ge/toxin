@@ -402,6 +402,8 @@ p {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 90%;
+  cursor: pointer;
+  z-index: 4;
 }
 
 .input__email:focus ~ .label__email-link,
@@ -2126,6 +2128,7 @@ p {
   line-height: 18px;
   font-size: 14px;
   color: #575871;
+  text-transform: none;
 }
 
 .textList-title p {
